@@ -9,29 +9,41 @@
 </head>
 <body>
 
-  <!-- ===== SITE BANNER ===== -->
-  <header class="site-banner" role="banner">
-    <div class="container-1200">
-      <h1 class="banner-title">
-        <a href="index.html">Graduate Institute of Journalism, National Taiwan University</a>
-      </h1>
-      <p class="banner-sub">國立臺灣大學新聞研究所</p>
-    </div>
+  <!-- ===== SITE HEADER ===== -->
+  <header class="site-header" role="banner">
+    <a href="index.html" class="site-header-brand">
+      <span class="site-header-title">Graduate Institute of Journalism, NTU</span>
+      <span class="site-header-sub">國立臺灣大學新聞研究所</span>
+    </a>
+    <a href="https://ntujour.github.io/" target="_blank" rel="noopener" class="site-header-lang">中文</a>
   </header>
 
-  <!-- ===== SITE NAV ===== -->
-  <nav class="site-nav" id="main-nav">
-    <div class="container-1200">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#introduction" class="nav-link" data-section="introduction">Introduction</a></li>
-        <li class="nav-item"><a href="#news" class="nav-link" data-section="news">News</a></li>
-        <li class="nav-item"><a href="#faculty" class="nav-link" data-section="faculty">Faculty</a></li>
-        <li class="nav-item nav-lang-item">
-          <a href="https://ntujour.github.io/" target="_blank" rel="noopener" class="nav-lang-link">中文</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <!-- ===== PAGE LAYOUT ===== -->
+  <div class="site-layout">
+
+    <!-- LEFT SIDEBAR NAV -->
+    <nav class="site-sidebar" id="main-nav" aria-label="Site navigation">
+      <div class="sidebar-nav">
+        <ul class="sidebar-nav-list">
+          <li><a href="#introduction" class="sidebar-nav-link" data-section="introduction">Introduction</a></li>
+          <li><a href="#news" class="sidebar-nav-link" data-section="news">News</a></li>
+          <li>
+            <a href="#faculty" class="sidebar-nav-link" data-section="faculty">Faculty</a>
+            <ul class="sidebar-nav-sub-list">
+              <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="fulltime">Full-Time</a></li>
+              <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="adjunct">Adjunct</a></li>
+              <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="specialist">Adjunct Specialist</a></li>
+              <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="emeritus">Prof. Emeritus</a></li>
+              <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="joint">Jointly Appointed</a></li>
+              <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="remembrance">In Remembrance</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="site-main">
 
   <!-- ===== INTRODUCTION ===== -->
   <section id="introduction">
@@ -147,353 +159,352 @@
         <p class="section-desc">Our faculty combine academic scholarship with deep professional expertise in journalism and communication.</p>
       </div>
 
+      <!-- Tab bar -->
+      <div class="faculty-tab-bar" role="tablist">
+        <button class="faculty-tab-btn active" data-tab="fulltime" role="tab" aria-selected="true">Full-Time</button>
+        <button class="faculty-tab-btn" data-tab="adjunct" role="tab" aria-selected="false">Adjunct</button>
+        <button class="faculty-tab-btn" data-tab="specialist" role="tab" aria-selected="false">Adjunct Specialist</button>
+        <button class="faculty-tab-btn" data-tab="emeritus" role="tab" aria-selected="false">Prof. Emeritus</button>
+        <button class="faculty-tab-btn" data-tab="joint" role="tab" aria-selected="false">Jointly Appointed</button>
+        <button class="faculty-tab-btn" data-tab="remembrance" role="tab" aria-selected="false">In Remembrance</button>
+      </div>
+
       <!-- ── Full-Time Faculty ── -->
-      <h3 class="faculty-section-heading heading">Full-Time Faculty</h3>
+      <div id="faculty-fulltime" class="faculty-tab-panel active">
       <div class="faculty-grid">
 
-        <div class="faculty-card">
+        <a class="faculty-card" href="faculty/ji-lung-hsieh.html">
           <div class="faculty-photo-wrap">
             <img class="faculty-photo" src="image/Ji-Lung%20Hsieh.png" alt="Ji-Lung Hsieh" loading="lazy">
             <div class="faculty-placeholder" style="display:none;">謝</div>
           </div>
           <div class="faculty-body">
-            <a href="faculty/ji-lung-hsieh.html" class="faculty-name">Ji-Lung Hsieh <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(謝吉隆)</span></a>
+            <span class="faculty-name">Ji-Lung Hsieh <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(謝吉隆)</span></span>
             <span class="faculty-badge">Associate Professor &amp; Director</span>
             <div class="faculty-tags"><span class="ftag">Computational Journalism</span><span class="ftag">Social Media</span><span class="ftag">Data Analysis</span></div>
           </div>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a class="faculty-card" href="faculty/lih-yun-lin.html">
           <div class="faculty-photo-wrap">
             <img class="faculty-photo" src="image/Lih-Yun%20Lin.jpg" alt="Lih-Yun Lin" loading="lazy">
           </div>
           <div class="faculty-body">
-            <a href="faculty/lih-yun-lin.html" class="faculty-name">Lih-Yun Lin <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(林麗雲)</span></a>
+            <span class="faculty-name">Lih-Yun Lin <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(林麗雲)</span></span>
             <span class="faculty-badge">Professor</span>
             <div class="faculty-tags"><span class="ftag">Media Policy</span><span class="ftag">Public Service Media</span><span class="ftag">Press Freedom</span></div>
           </div>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a class="faculty-card" href="faculty/chen-ling-hung.html">
           <div class="faculty-photo-wrap">
             <img class="faculty-photo" src="image/Chen-Ling%20Hung.jpg" alt="Chen-Ling Hung" loading="lazy">
             <div class="faculty-placeholder" style="display:none;">洪</div>
           </div>
           <div class="faculty-body">
-            <a href="faculty/chen-ling-hung.html" class="faculty-name">Chen-Ling Hung <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(洪貞玲)</span></a>
+            <span class="faculty-name">Chen-Ling Hung <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(洪貞玲)</span></span>
             <span class="faculty-badge">Professor</span>
             <div class="faculty-tags"><span class="ftag">Communication Law</span><span class="ftag">Broadcasting Policy</span><span class="ftag">Digital Divide</span></div>
           </div>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a class="faculty-card" href="faculty/adrian-rauchfleisch.html">
           <div class="faculty-photo-wrap">
             <img class="faculty-photo" src="image/Adrian%20Rauchfleisch.png" alt="Adrian Rauchfleisch" loading="lazy">
             <div class="faculty-placeholder" style="display:none;">AR</div>
           </div>
           <div class="faculty-body">
-            <a href="faculty/adrian-rauchfleisch.html" class="faculty-name">Adrian Rauchfleisch</a>
+            <span class="faculty-name">Adrian Rauchfleisch</span>
             <span class="faculty-badge">Professor</span>
             <div class="faculty-tags"><span class="ftag">Political Communication</span><span class="ftag">Social Media</span><span class="ftag">Disinformation</span></div>
           </div>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a class="faculty-card" href="faculty/hui-ju-tsai.html">
           <div class="faculty-photo-wrap">
             <img class="faculty-photo" src="image/Hui-Ju%20Tsai.jpg" alt="Hui-Ju Tsai" loading="lazy">
             <div class="faculty-placeholder" style="display:none;">蔡</div>
           </div>
           <div class="faculty-body">
-            <a href="faculty/hui-ju-tsai.html" class="faculty-name">Hui-Ju Tsai <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(蔡蕙如)</span></a>
+            <span class="faculty-name">Hui-Ju Tsai <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(蔡蕙如)</span></span>
             <span class="faculty-badge">Associate Professor</span>
             <div class="faculty-tags"><span class="ftag">New Media</span><span class="ftag">Civic Engagement</span><span class="ftag">Cultural Studies</span></div>
           </div>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a class="faculty-card" href="faculty/i-i-chan.html">
           <div class="faculty-photo-wrap">
             <img class="faculty-photo" src="image/I-I%20Chan.png" alt="I-I Chan" loading="lazy">
           </div>
           <div class="faculty-body">
-            <a href="faculty/i-i-chan.html" class="faculty-name">I-I Chan <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(詹怡宜)</span></a>
+            <span class="faculty-name">I-I Chan <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(詹怡宜)</span></span>
             <span class="faculty-badge">Associate Professor</span>
             <div class="faculty-tags"><span class="ftag">TV Journalism</span><span class="ftag">News Production</span><span class="ftag">Public Affairs</span></div>
           </div>
-        </div>
+        </a>
 
-        <div class="faculty-card">
+        <a class="faculty-card" href="faculty/lokman-tsui.html">
           <div class="faculty-photo-wrap">
             <img class="faculty-photo" src="image/Lokman%20Tsui.jpg" alt="Lokman Tsui" loading="lazy">
             <div class="faculty-placeholder" style="display:none;">徐</div>
           </div>
           <div class="faculty-body">
-            <a href="faculty/lokman-tsui.html" class="faculty-name">Lokman Tsui <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(徐洛文)</span></a>
+            <span class="faculty-name">Lokman Tsui <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(徐洛文)</span></span>
             <span class="faculty-badge">Assistant Professor</span>
             <div class="faculty-tags"><span class="ftag">Press Freedom</span><span class="ftag">Internet Censorship</span><span class="ftag">Digital Security</span></div>
           </div>
-        </div>
+        </a>
 
       </div>
+      </div><!-- /.faculty-tab-panel#faculty-fulltime -->
 
       <!-- ── Adjunct Faculty ── -->
-      <h3 class="faculty-section-heading">Adjunct Faculty</h3>
-      <div class="faculty-compact-grid">
+      <div id="faculty-adjunct" class="faculty-tab-panel">
+      <div class="faculty-grid">
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Tai-Li%20Wang.png" alt="Tai-Li Wang" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">王</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Tai-Li%20Wang.png" alt="Tai-Li Wang" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Tai-Li Wang <span class="faculty-compact-zh">(王泰俐)</span></span>
-            <div class="faculty-compact-title">Professor</div>
-            <div class="faculty-compact-sub">Media Psychology · Political Communication · Video Journalism · Online Communication</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Tai-Li Wang <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(王泰俐)</span></span>
+            <span class="faculty-badge">Professor</span>
+            <div class="faculty-tags"><span class="ftag">Media Psychology</span><span class="ftag">Political Communication</span><span class="ftag">Video Journalism</span><span class="ftag">Online Communication</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Shuen-Xiao%20Chen.jpg" alt="Shuen-Xiao Chen" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">陳</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Shuen-Xiao%20Chen.jpg" alt="Shuen-Xiao Chen" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Shuen-Xiao Chen <span class="faculty-compact-zh">(陳順孝)</span></span>
-            <div class="faculty-compact-title">Professor</div>
-            <div class="faculty-compact-sub">Journalism Practice &amp; Digital Media</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Shuen-Xiao Chen <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(陳順孝)</span></span>
+            <span class="faculty-badge">Professor</span>
+            <div class="faculty-tags"><span class="ftag">Journalism Practice</span><span class="ftag">Digital Media</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Lin-Lin%20Ku.png" alt="Lin-Lin Ku" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">古</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Lin-Lin%20Ku.png" alt="Lin-Lin Ku" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Lin-Lin Ku <span class="faculty-compact-zh">(古玲玲)</span></span>
-            <div class="faculty-compact-title">Associate Professor</div>
-            <div class="faculty-compact-sub">Communication Research</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Lin-Lin Ku <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(古玲玲)</span></span>
+            <span class="faculty-badge">Associate Professor</span>
+            <div class="faculty-tags"><span class="ftag">Communication Research</span></div>
           </div>
         </div>
 
       </div>
+      </div><!-- /.faculty-tab-panel#faculty-adjunct -->
 
       <!-- ── Adjunct Specialist Faculty ── -->
-      <h3 class="faculty-section-heading">Adjunct Specialist Faculty</h3>
-      <div class="faculty-compact-grid">
+      <div id="faculty-specialist" class="faculty-tab-panel">
+      <div class="faculty-grid">
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Chie-De%20Li.jpg" alt="Chie-De Li" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">李</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Chie-De%20Li.jpg" alt="Chie-De Li" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Chie-De Li <span class="faculty-compact-zh">(李志德)</span></span>
-            <div class="faculty-compact-sub">Reporting and Writing (II)</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Chie-De Li <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(李志德)</span></span>
+            <div class="faculty-tags"><span class="ftag">Reporting &amp; Writing (II)</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Yu-Fang%20Liang.jpg" alt="Yu-Fang Liang" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">梁</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Yu-Fang%20Liang.jpg" alt="Yu-Fang Liang" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Yu-Fang Liang <span class="faculty-compact-zh">(梁玉芳)</span></span>
-            <div class="faculty-compact-sub">Reporting and Writing (II)</div>
-          </div>
-        </div>
-
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Sherry%20Lee.png" alt="Sherry Lee" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">李</div>
-          </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Sherry Lee <span class="faculty-compact-zh">(李雪莉)</span></span>
-            <div class="faculty-compact-sub">Reporting and Writing (I)</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Yu-Fang Liang <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(梁玉芳)</span></span>
+            <div class="faculty-tags"><span class="ftag">Reporting &amp; Writing (II)</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Yan-Fu%20Lee.jpg" alt="Yan-Fu Lee" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">李</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Sherry%20Lee.png" alt="Sherry Lee" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Yan-Fu Lee <span class="faculty-compact-zh">(李彥甫)</span></span>
-            <div class="faculty-compact-sub">News Editing and Information Design</div>
-          </div>
-        </div>
-
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Kuan-Sheng%20Yang.jpg" alt="Kuan-Sheng Yang" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">楊</div>
-          </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Kuan-Sheng Yang <span class="faculty-compact-zh">(楊光昇)</span></span>
-            <div class="faculty-compact-sub">Photo Journalism</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Sherry Lee <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(李雪莉)</span></span>
+            <div class="faculty-tags"><span class="ftag">Reporting &amp; Writing (I)</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Li-Ren%20Liou.jpg" alt="Li-Ren Liou" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">劉</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Yan-Fu%20Lee.jpg" alt="Yan-Fu Lee" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Li-Ren Liou <span class="faculty-compact-zh">(劉力仁)</span></span>
-            <div class="faculty-compact-sub">Reporting and Writing (I)</div>
-          </div>
-        </div>
-
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Kai-Chun%20Cheng.png" alt="Kai-Chun Cheng" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">鄭</div>
-          </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Kai-Chun Cheng <span class="faculty-compact-zh">(鄭凱駿)</span></span>
-            <div class="faculty-compact-sub">Television News Reporting (II)</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Yan-Fu Lee <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(李彥甫)</span></span>
+            <div class="faculty-tags"><span class="ftag">News Editing</span><span class="ftag">Information Design</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Fu-Yuan%20Shiau.jpg" alt="Fu-Yuan Shiau" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">蕭</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Kuan-Sheng%20Yang.jpg" alt="Kuan-Sheng Yang" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Fu-Yuan Shiau <span class="faculty-compact-zh">(蕭富元)</span></span>
-            <div class="faculty-compact-sub">Reporting and Writing</div>
-          </div>
-        </div>
-
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Jie-Ping%20Zhang.jpg" alt="Jie-Ping Zhang" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">張</div>
-          </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Jie-Ping Zhang <span class="faculty-compact-zh">(張潔平)</span></span>
-            <div class="faculty-compact-sub">Seminar on Journalism of Greater China Region</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Kuan-Sheng Yang <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(楊光昇)</span></span>
+            <div class="faculty-tags"><span class="ftag">Photo Journalism</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Je-Bin%20Huang.jpg" alt="Je-Bin Huang" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">黃</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Li-Ren%20Liou.jpg" alt="Li-Ren Liou" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Je-Bin Huang <span class="faculty-compact-zh">(黃哲斌)</span></span>
-            <div class="faculty-compact-sub">Digital Innovation and Media Management</div>
-          </div>
-        </div>
-
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/De-Lin%20Fang.jpg" alt="De-Lin Fang" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">方</div>
-          </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">De-Lin Fang <span class="faculty-compact-zh">(方德琳)</span></span>
-            <div class="faculty-compact-sub">Business and Finance Reporting</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Li-Ren Liou <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(劉力仁)</span></span>
+            <div class="faculty-tags"><span class="ftag">Reporting &amp; Writing (I)</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Wan-Yu Wu.jpg" alt="Wan-Yu Wu" loading="lazy">
-            <div class="faculty-compact-placeholder-sm">吳</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Kai-Chun%20Cheng.png" alt="Kai-Chun Cheng" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Wan-Yu Wu <span class="faculty-compact-zh">(吳婉瑜)</span></span>
-            <div class="faculty-compact-sub">Digital Innovation and Media Management</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Kai-Chun Cheng <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(鄭凱駿)</span></span>
+            <div class="faculty-tags"><span class="ftag">TV News Reporting (II)</span></div>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Fu-Yuan%20Shiau.jpg" alt="Fu-Yuan Shiau" loading="lazy">
+          </div>
+          <div class="faculty-body">
+            <span class="faculty-name">Fu-Yuan Shiau <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(蕭富元)</span></span>
+            <div class="faculty-tags"><span class="ftag">Reporting &amp; Writing</span></div>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Jie-Ping%20Zhang.jpg" alt="Jie-Ping Zhang" loading="lazy">
+          </div>
+          <div class="faculty-body">
+            <span class="faculty-name">Jie-Ping Zhang <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(張潔平)</span></span>
+            <div class="faculty-tags"><span class="ftag">Greater China Journalism</span></div>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Je-Bin%20Huang.jpg" alt="Je-Bin Huang" loading="lazy">
+          </div>
+          <div class="faculty-body">
+            <span class="faculty-name">Je-Bin Huang <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(黃哲斌)</span></span>
+            <div class="faculty-tags"><span class="ftag">Digital Innovation</span><span class="ftag">Media Management</span></div>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/De-Lin%20Fang.jpg" alt="De-Lin Fang" loading="lazy">
+          </div>
+          <div class="faculty-body">
+            <span class="faculty-name">De-Lin Fang <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(方德琳)</span></span>
+            <div class="faculty-tags"><span class="ftag">Business Reporting</span><span class="ftag">Finance Reporting</span></div>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Wan-Yu%20Wu.jpg" alt="Wan-Yu Wu" loading="lazy">
+          </div>
+          <div class="faculty-body">
+            <span class="faculty-name">Wan-Yu Wu <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(吳婉瑜)</span></span>
+            <div class="faculty-tags"><span class="ftag">Digital Innovation</span><span class="ftag">Media Management</span></div>
           </div>
         </div>
 
       </div>
+      </div><!-- /.faculty-tab-panel#faculty-specialist -->
 
       <!-- ── Professor Emeritus ── -->
-      <h3 class="faculty-section-heading">Professor Emeritus</h3>
-      <div class="faculty-compact-grid">
+      <div id="faculty-emeritus" class="faculty-tab-panel">
+      <div class="faculty-grid">
 
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Chin-Hua%20Chang.png" alt="Chin-Hua Chang" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">張</div>
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Chin-Hua%20Chang.png" alt="Chin-Hua Chang" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Chin-Hua Chang <span class="faculty-compact-zh">(張錦華)</span></span>
-            <div class="faculty-compact-title">Emeritus Professor</div>
-            <div class="faculty-compact-sub">Theories of Mass Communication · Critical Communication Theories · Multiculturalism &amp; Ethnic Communication Studies · Former Director of the Institute</div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- ── Joint Appointment ── -->
-      <h3 class="faculty-section-heading">Jointly Appointed Faculty</h3>
-      <div class="faculty-compact-grid">
-
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Ching-Yi%20Liu.jpg" alt="Ching-Yi Liu" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">劉</div>
-          </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Ching-Yi Liu <span class="faculty-compact-zh">(劉靜怡)</span></span>
-            <div class="faculty-compact-title">Professor</div>
-            <div class="faculty-compact-sub">College of Law, NTU · Information Law and Policy · Law and Technology</div>
-          </div>
-        </div>
-
-        <div class="faculty-compact-card">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Hui-Chieh%20Su.jpg" alt="Hui-Chieh Su" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">蘇</div>
-          </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Hui-Chieh Su <span class="faculty-compact-zh">(蘇慧婕)</span></span>
-            <div class="faculty-compact-title">Associate Professor</div>
-            <div class="faculty-compact-sub">College of Law, NTU · Media Law and Ethics</div>
+          <div class="faculty-body">
+            <span class="faculty-name">Chin-Hua Chang <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(張錦華)</span></span>
+            <span class="faculty-badge">Emeritus Professor</span>
+            <div class="faculty-tags"><span class="ftag">Mass Communication Theory</span><span class="ftag">Critical Theory</span><span class="ftag">Multiculturalism</span></div>
           </div>
         </div>
 
       </div>
+      </div><!-- /.faculty-tab-panel#faculty-emeritus -->
+
+      <!-- ── Jointly Appointed ── -->
+      <div id="faculty-joint" class="faculty-tab-panel">
+      <div class="faculty-grid">
+
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Ching-Yi%20Liu.jpg" alt="Ching-Yi Liu" loading="lazy">
+          </div>
+          <div class="faculty-body">
+            <span class="faculty-name">Ching-Yi Liu <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(劉靜怡)</span></span>
+            <span class="faculty-badge">Professor</span>
+            <div class="faculty-tags"><span class="ftag">Information Law</span><span class="ftag">Law &amp; Technology</span><span class="ftag">College of Law, NTU</span></div>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Hui-Chieh%20Su.jpg" alt="Hui-Chieh Su" loading="lazy">
+          </div>
+          <div class="faculty-body">
+            <span class="faculty-name">Hui-Chieh Su <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(蘇慧婕)</span></span>
+            <span class="faculty-badge">Associate Professor</span>
+            <div class="faculty-tags"><span class="ftag">Media Law</span><span class="ftag">Ethics</span><span class="ftag">College of Law, NTU</span></div>
+          </div>
+        </div>
+
+      </div>
+      </div><!-- /.faculty-tab-panel#faculty-joint -->
 
       <!-- ── In Remembrance ── -->
-      <h3 class="faculty-section-heading heading">In Remembrance</h3>
-      <div class="faculty-compact-grid">
+      <div id="faculty-remembrance" class="faculty-tab-panel">
+      <div class="faculty-grid">
 
-        <div class="faculty-compact-card card-remembrance">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Rou-Jin%20Chen.jpg" alt="Rou-Jin Chen" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">陳</div>
+        <div class="faculty-card faculty-card-remembrance">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Rou-Jin%20Chen.jpg" alt="Rou-Jin Chen" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Rou-Jin Chen <span class="faculty-compact-zh">(陳柔縉)</span></span>
-            <div class="faculty-compact-sub">Taught Reporting and Writing (II) · A celebrated journalist and author known for her social and cultural history of Taiwan</div>
+          <div class="faculty-body">
+            <span class="faculty-name" style="color:var(--text-700);">Rou-Jin Chen <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(陳柔縉)</span></span>
+            <div class="faculty-tags"><span class="ftag">Reporting &amp; Writing (II)</span><span class="ftag">Journalism &amp; Cultural History</span></div>
           </div>
         </div>
 
-        <div class="faculty-compact-card card-remembrance">
-          <div class="faculty-compact-photo-wrap">
-            <img class="faculty-compact-photo" src="image/Yen-Yuan%20Ni.jpg" alt="Yen-Yuan Ni" loading="lazy">
-            <div class="faculty-compact-placeholder-sm" style="display:none;">倪</div>
+        <div class="faculty-card faculty-card-remembrance">
+          <div class="faculty-photo-wrap">
+            <img class="faculty-photo" src="image/Yen-Yuan%20Ni.jpg" alt="Yen-Yuan Ni" loading="lazy">
           </div>
-          <div class="faculty-compact-info">
-            <span class="faculty-compact-name">Yen-Yuan Ni <span class="faculty-compact-zh">(倪炎元)</span></span>
-            <div class="faculty-compact-title">Professor</div>
-            <div class="faculty-compact-sub">Taught Public Relations and News Reporting · Scholar of political communication and cross-strait media relations</div>
+          <div class="faculty-body">
+            <span class="faculty-name" style="color:var(--text-700);">Yen-Yuan Ni <span style="font-weight:400;font-size:0.85rem;color:var(--text-500);">(倪炎元)</span></span>
+            <span class="faculty-badge">Professor</span>
+            <div class="faculty-tags"><span class="ftag">Public Relations</span><span class="ftag">Political Communication</span></div>
           </div>
         </div>
 
       </div>
+      </div><!-- /.faculty-tab-panel#faculty-remembrance -->
 
     </div>
   </section>
+
+    </main><!-- /.site-main -->
+  </div><!-- /.site-layout -->
 
   <!-- ===== FOOTER ===== -->
   <footer>
@@ -519,21 +530,19 @@
   </footer>
 
   <script>
-    // Scroll-spy: highlight active nav link
+    // Scroll-spy: highlight active sidebar link
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link[data-section]');
-    const nav = document.getElementById('main-nav');
-
-    function navHeight() { return nav.offsetHeight; }
+    const sideLinks = document.querySelectorAll('.sidebar-nav-link[data-section]');
+    const HEADER_H = 54; // matches .site-header height in px
 
     function onScroll() {
       let current = '';
       sections.forEach(sec => {
-        if (window.scrollY >= sec.offsetTop - navHeight() - 40) {
+        if (window.scrollY >= sec.offsetTop - HEADER_H - 40) {
           current = sec.id;
         }
       });
-      navLinks.forEach(link => {
+      sideLinks.forEach(link => {
         link.classList.toggle('active', link.dataset.section === current);
       });
     }
@@ -541,13 +550,42 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    // Smooth scroll on nav click
-    navLinks.forEach(link => {
+    // Faculty tab switching
+    const tabBtns = document.querySelectorAll('.faculty-tab-btn');
+    const tabPanels = document.querySelectorAll('.faculty-tab-panel');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+        tabPanels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        document.getElementById('faculty-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Sidebar sub-nav: activate tab + scroll to faculty section
+    document.querySelectorAll('.sidebar-nav-sub-link[data-faculty-tab]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const tab = link.dataset.facultyTab;
+        tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+        tabPanels.forEach(p => p.classList.remove('active'));
+        const targetBtn = document.querySelector(`.faculty-tab-btn[data-tab="${tab}"]`);
+        if (targetBtn) { targetBtn.classList.add('active'); targetBtn.setAttribute('aria-selected', 'true'); }
+        const targetPanel = document.getElementById('faculty-' + tab);
+        if (targetPanel) targetPanel.classList.add('active');
+        const facultySec = document.getElementById('faculty');
+        if (facultySec) window.scrollTo({ top: facultySec.offsetTop - HEADER_H + 1, behavior: 'smooth' });
+      });
+    });
+
+    // Smooth scroll on sidebar link click
+    sideLinks.forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
         const target = document.getElementById(link.dataset.section);
         if (target) {
-          window.scrollTo({ top: target.offsetTop - navHeight() + 1, behavior: 'smooth' });
+          window.scrollTo({ top: target.offsetTop - HEADER_H + 1, behavior: 'smooth' });
         }
       });
     });
