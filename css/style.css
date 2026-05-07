@@ -555,7 +555,7 @@ footer { background: var(--maroon-dark); }
 
 .footer-cols {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 3rem;
   padding-bottom: 3rem;
 }
@@ -838,26 +838,16 @@ footer { background: var(--maroon-dark); }
 
 .faculty-section-heading {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 1.15rem;
   font-weight: 700;
-  color: var(--maroon);
+  color: var(--text-700);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
   margin: 3rem 0 1.25rem;
   padding-bottom: 0.6rem;
   border-bottom: 2px solid var(--border);
-}
-
-.faculty-section-heading.heading-fulltime {
   font-size: 1.4rem;
   letter-spacing: 0.04em;
-  margin-top: 0;
 }
 
-.faculty-section-heading.heading-remembrance {
-  color: var(--text-700);
-  border-bottom-color: #d1d5db;
-}
 
 .faculty-compact-grid {
   display: grid;
@@ -956,7 +946,7 @@ footer { background: var(--maroon-dark); }
 
 @media (max-width: 960px) {
   .intro-body { grid-template-columns: 1fr; gap: 2.5rem; }
-  .footer-cols { grid-template-columns: 1fr 1fr; }
+  .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
   .profile-body-inner { grid-template-columns: 1fr; }
   .profile-sidebar { position: static; }
   .faculty-compact-grid { grid-template-columns: repeat(2, 1fr); }
