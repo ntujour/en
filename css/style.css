@@ -1,32 +1,32 @@
 /* ============================================================
    Graduate Institute of Journalism, National Taiwan University
-   Main Stylesheet — Color scheme matching ntujour.github.io
+   Main Stylesheet — Neutral monochrome palette
    ============================================================ */
 
 :root {
-  /* === Core brand colors (from ntujour.github.io) === */
-  --maroon:        #671919;   /* nav background */
-  --maroon-dark:   #3e0f0f;   /* footer background */
-  --maroon-hover:  #991b1b;   /* dropdown / hover bg */
-  --gold:          #efa22a;   /* accent, active/hover nav text */
-  --gold-light:    #f4bb5a;
+  /* === Neutral palette (near-black accent, no brand color) === */
+  --maroon:        #111111;   /* key accent: links, headings, active states */
+  --maroon-dark:   #111111;   /* dark surfaces: header, footer, hero */
+  --maroon-hover:  #2d2d2d;   /* hover: slightly lighter dark */
+  --gold:          #111111;   /* active indicators: sidebar border, underlines */
+  --gold-light:    #555555;   /* secondary accents */
 
-  /* === Text (Tailwind gray scale from source site) === */
-  --text-900: #1f2937;   /* gray-800 — banner title */
-  --text-700: #374151;   /* gray-700 — banner subtitle */
-  --text-600: #4b5563;   /* gray-600 — tagline / secondary */
-  --text-500: #6b7280;   /* gray-500 — muted */
+  /* === Text hierarchy (key → muted) === */
+  --text-900: #111111;   /* very dark  — headings, names, key info */
+  --text-700: #444444;   /* dark       — body text */
+  --text-600: #767676;   /* medium     — secondary text */
+  --text-500: #aaaaaa;   /* light      — muted labels, tags */
 
   /* === Backgrounds === */
-  --banner-bg: #f5f5f5;  /* site-banner background */
+  --banner-bg: #f6f6f6;
   --bg:        #ffffff;
-  --bg-alt:    #f9fafb;  /* section alternate */
+  --bg-alt:    #f5f5f5;
 
   /* === UI === */
-  --border:       #e5e7eb;
-  --shadow:       0 2px 8px rgba(103, 25, 25, 0.10);
-  --shadow-hover: 0 8px 24px rgba(103, 25, 25, 0.18);
-  --radius:       6px;
+  --border:       #e8e8e8;
+  --shadow:       0 1px 4px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.11);
+  --radius:       4px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -245,7 +245,7 @@ img { max-width: 100%; display: block; }
    ============================================================ */
 
 .hero {
-  background: linear-gradient(140deg, var(--maroon-dark) 0%, var(--maroon) 55%, #8b2020 100%);
+  background: linear-gradient(160deg, #0a0a0a 0%, #1c1c1c 100%);
   color: white;
   padding: 5rem 1rem 4rem;
   position: relative;
@@ -284,7 +284,7 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: rgba(255, 255, 255, 0.5);   /* light on dark hero bg */
   margin-bottom: 1.1rem;
 }
 
@@ -484,19 +484,19 @@ section { padding: 5rem 1rem; }
   display: inline-block;
   font-family: -apple-system, sans-serif;
   font-size: 0.68rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   padding: 0.18rem 0.6rem;
   border-radius: 2px;
-  background: var(--maroon);
-  color: white;
+  background: #ebebeb;
+  color: #555555;
   margin-bottom: 0.5rem;
 }
 
-.news-tag.tag-event  { background: #1b6b3a; }
-.news-tag.tag-award  { background: var(--gold); color: var(--maroon-dark); }
-.news-tag.tag-forum  { background: #5a4280; }
+.news-tag.tag-event  { background: #ebebeb; color: #555555; }
+.news-tag.tag-award  { background: #ebebeb; color: #555555; }
+.news-tag.tag-forum  { background: #ebebeb; color: #555555; }
 
 .news-title {
   font-size: 1.02rem;
@@ -802,7 +802,7 @@ footer { background: var(--maroon-dark); }
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: rgba(255, 255, 255, 0.55);  /* light on dark profile header bg */
   margin-bottom: 0.6rem;
 }
 
