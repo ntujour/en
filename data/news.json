@@ -1,30 +1,26 @@
 [
   {
-    "year": "2025",
-    "tag": "Forum",
-    "tagClass": "tag-forum",
     "title": "Red Alert: China's External Propaganda Plan and Media Information Warfare",
+    "date": "2025-03-15",
+    "tag": "Forum",
     "excerpt": "A public forum examining China's overseas propaganda strategy and its implications for media integrity and information security in Taiwan and globally."
   },
   {
-    "year": "2025",
-    "tag": "Award",
-    "tagClass": "tag-award",
     "title": "2025 Sustainable and Constructive News Award",
+    "date": "2025-04-20",
+    "tag": "Award",
     "excerpt": "The institute recognizes outstanding journalism that advances public understanding of sustainability and constructive reporting practices in Taiwan."
   },
   {
-    "year": "2024",
-    "tag": "Forum",
-    "tagClass": "tag-forum",
     "title": "News Education and Media Literacy in the AI Era",
+    "date": "2024-11-08",
+    "tag": "Forum",
     "excerpt": "A symposium bringing together journalism educators, media practitioners, and researchers to discuss how artificial intelligence is reshaping newsrooms and journalism pedagogy."
   },
   {
-    "year": "2024",
-    "tag": "Forum",
-    "tagClass": "tag-forum",
     "title": "Disinformation Attacks During the Presidential Election and Taiwan's Response",
+    "date": "2024-05-22",
+    "tag": "Forum",
     "excerpt": "Researchers and journalists convene to analyze patterns of election disinformation and discuss institutional and civic responses to protect Taiwan's information environment."
   }
 ]

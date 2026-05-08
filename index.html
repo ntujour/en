@@ -275,12 +275,26 @@
         </${tag}>`;
     }
 
+    // ── News helpers ─────────────────────────────────────────────────────
+    const TAG_CLASS = { Forum: 'tag-forum', Award: 'tag-award', Event: 'tag-event', Research: 'tag-research' };
+
+    function fmtDate(dateStr) {
+      if (!dateStr) return '';
+      // Accept YYYY-MM-DD or YYYY
+      const d = new Date(dateStr.length === 4 ? dateStr + '-01-01' : dateStr);
+      return isNaN(d) ? dateStr : d.getFullYear().toString();
+    }
+
     // ── News card builder ────────────────────────────────────────────────
     function buildNewsCard(item) {
+      const tagClass = TAG_CLASS[item.tag] || 'tag-forum';
+      const pin = item.pinned
+        ? `<span class="news-pin" title="Pinned">📌</span>`
+        : '';
       return `<div class="news-card">
-          <div class="news-meta"><div class="news-date-year">${esc(item.year)}</div></div>
+          <div class="news-meta"><div class="news-date-year">${esc(fmtDate(item.date))}</div></div>
           <div class="news-content">
-            <span class="news-tag ${esc(item.tagClass)}">${esc(item.tag)}</span>
+            <span class="news-tag ${tagClass}">${esc(item.tag)}</span>${pin}
             <div class="news-title">${esc(item.title)}</div>
             <div class="news-excerpt">${esc(item.excerpt)}</div>
           </div>
@@ -292,6 +306,13 @@
       fetch('data/news.json').then(r => r.json()),
       fetch('data/faculty.json').then(r => r.json())
     ]).then(([news, faculty]) => {
+
+      // Sort: pinned first, then by date descending
+      news.sort((a, b) => {
+        if (a.pinned && !b.pinned) return -1;
+        if (!a.pinned && b.pinned) return 1;
+        return (b.date || '').localeCompare(a.date || '');
+      });
 
       // Render news
       const newsList = document.querySelector('.news-list');

@@ -64,6 +64,8 @@ Six tabs driven by JavaScript:
 ## News Section
 - Items loaded via `fetch('data/news.json')`
 - To add/edit news: edit `data/news.json` only — no HTML changes needed
+- Pinned items (`"pinned": true`) are sorted to the top automatically
+- `tagClass` is **auto-derived** from `tag` in JavaScript — never add it to the JSON
 
 ## Color Scheme
 ```
@@ -79,15 +81,28 @@ Body font: Georgia (serif). UI font: -apple-system (sans-serif).
 ```json
 [
   {
-    "year": "2025",
+    "title": "Headline text",
+    "date": "2025-05-08",
     "tag": "Forum",
-    "tagClass": "tag-forum",
-    "title": "...",
-    "excerpt": "..."
+    "excerpt": "One or two sentence summary.",
+    "image": "news-photo.jpg",
+    "pinned": true,
+    "link": "https://..."
   }
 ]
 ```
-`tagClass` options: `tag-forum`, `tag-award`, `tag-event`, `tag-research`
+
+| Field | Required | Notes |
+|-------|----------|-------|
+| `title` | ✅ | Headline |
+| `date` | ✅ | `YYYY-MM-DD` — year is derived automatically |
+| `tag` | ✅ | `Forum` / `Award` / `Event` / `Research` |
+| `excerpt` | ✅ | Short summary (1–2 sentences) |
+| `image` | optional | Filename inside `image/` folder |
+| `pinned` | optional | `true` → pinned to top; omit if false |
+| `link` | optional | External URL for "Read more" |
+
+`tagClass` is **never written to the JSON** — it is derived from `tag` automatically by the JS renderer.
 
 ### `data/faculty.json`
 ```json
@@ -111,8 +126,46 @@ Body font: Georgia (serif). UI font: -apple-system (sans-serif).
 }
 ```
 
+## Workflow: Adding or Editing a News Item
+
+> No Skill needed — Claude follows these steps whenever the user says "新增貼文", "add news", "修改文章", etc.
+
+### Step 1 — Field check
+Identify which **required** fields the user hasn't provided and list them clearly.  
+Example response:
+> 你目前提供了標題和摘要，還缺少：**日期**（格式：YYYY-MM-DD）、**類別**（Forum / Award / Event / Research）。這樣就好，還是要補上？
+
+### Step 2 — Confirm
+Wait for the user to fill in the gaps **or** explicitly say "就這樣" / "proceed". Do not write until confirmed.
+
+### Step 3 — Write to `data/news.json`
+- For a new item: **prepend** it to the array (newest first)
+- For editing: find the matching title and update in-place
+- Rules:
+  - Do **not** add `tagClass` — it is derived by JS
+  - Omit `image`, `pinned`, `link` if not provided (don't write `null`/`false`)
+  - `date` must be `YYYY-MM-DD`
+
+### Step 4 — Commit
+```bash
+git add data/news.json
+git commit -m "news: add/update '<short title>'"
+```
+
+### Step 5 — Preview (auto-open tab)
+After committing, push and open the live site:
+```bash
+git push
+```
+Then open a browser tab to `https://ntujour.github.io/en/`:
+- **If Chrome MCP is available**: use `mcp__Claude_in_Chrome__tabs_create_mcp` + `mcp__Claude_in_Chrome__navigate`
+- **Fallback**: `open "https://ntujour.github.io/en/"` via Bash
+
+---
+
 ## Development Workflow
-- All edits go into the worktree at `.claude/worktrees/agitated-hamilton-bceda0/`
-- After each session, sync to main repo with `cp worktree/file main/file`
-- Commit to `main` branch directly
+- Working directory: `/Users/hebe/Desktop/web/ntujour-en.github.io/` (main branch)
+- Worktree (legacy): `.claude/worktrees/agitated-hamilton-bceda0/` — sync with `cp` if used
+- Commit to `main` branch directly; push to `origin` to deploy on GitHub Pages
 - `LOG.md` records every prompt session (date, summary, files changed)
+- GitHub Pages URL: `https://ntujour.github.io/en/`
