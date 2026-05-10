@@ -393,16 +393,18 @@ section { padding: 5rem 1rem; }
 }
 
 .intro-pillars {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 0;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .pillar-tag {
+  border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-}
-.pillar-tag:first-child {
-  border-top: 1px solid var(--border);
 }
 
 .pillar-btn {
@@ -412,9 +414,9 @@ section { padding: 5rem 1rem; }
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.75rem 0.25rem;
+  padding: 1rem 1.25rem;
   font-family: -apple-system, sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--maroon);
   letter-spacing: 0.01em;
@@ -427,8 +429,12 @@ section { padding: 5rem 1rem; }
   font-size: 0.88rem;
   color: var(--text-500);
   line-height: 1.65;
-  padding: 0 0.25rem 0.85rem;
+  padding: 0 1.25rem 1rem;
   font-family: -apple-system, sans-serif;
+}
+
+@media (max-width: 900px) {
+  .intro-pillars { grid-template-columns: repeat(2, 1fr); }
 }
 
 .intro-stats {
