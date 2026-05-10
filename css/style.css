@@ -1197,3 +1197,131 @@ footer { background: var(--maroon-dark); }
   section { padding: 3.5rem 1rem; }
   .hero { padding: 4rem 1rem 3rem; }
 }
+
+/* ============================================================
+   Visiting Scholars
+   ============================================================ */
+.scholars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.scholar-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+.scholar-row:last-child { border-bottom: none; }
+.scholar-row:nth-child(even) { background: var(--bg-alt); }
+.scholar-row:hover { background: #fef9f0; }
+
+.scholar-name {
+  font-weight: 600;
+  color: var(--text-900);
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+.scholar-name-zh {
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: var(--text-500);
+  margin-left: 0.35rem;
+}
+.scholar-affil {
+  font-size: 0.875rem;
+  color: var(--text-600);
+  line-height: 1.4;
+}
+.scholar-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+.scholar-period {
+  font-size: 0.8rem;
+  color: var(--text-500);
+  white-space: nowrap;
+}
+.scholar-area {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.55rem;
+  border-radius: 99px;
+  background: rgba(103,25,25,0.08);
+  color: var(--maroon);
+}
+
+@media (max-width: 720px) {
+  .scholar-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  .scholar-meta { align-items: flex-start; text-align: left; }
+}
+
+/* ============================================================
+   Curriculum
+   ============================================================ */
+.curriculum-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+.curriculum-text p {
+  color: var(--text-600);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.curriculum-text p:last-child { margin-bottom: 0; }
+
+.curriculum-tracks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.curriculum-track {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  transition: box-shadow 0.2s;
+}
+.curriculum-track:hover {
+  box-shadow: var(--shadow);
+}
+.curriculum-track h4 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--maroon);
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.01em;
+}
+.curriculum-track p {
+  font-size: 0.83rem;
+  color: var(--text-600);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .curriculum-body { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .curriculum-tracks { grid-template-columns: 1fr; }
+}

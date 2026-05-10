@@ -46,6 +46,8 @@
               <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="remembrance">In Remembrance</a></li>
             </ul>
           </li>
+          <li><a href="#visiting-scholars" class="sidebar-nav-link" data-section="visiting-scholars">Visiting Scholars</a></li>
+          <li><a href="#curriculum" class="sidebar-nav-link" data-section="curriculum">Curriculum</a></li>
         </ul>
       </div>
     </nav>
@@ -169,6 +171,54 @@
       </div>
       </div><!-- /.faculty-tab-panel#faculty-remembrance -->
 
+    </div>
+  </section>
+
+  <!-- ===== VISITING SCHOLARS ===== -->
+  <section id="visiting-scholars">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Visiting Scholars</h2>
+        <p class="section-desc">Academics and researchers currently affiliated with the Graduate Institute of Journalism</p>
+      </div>
+      <div class="scholars-list" id="scholars-list">
+        <!-- Rendered by JS from data/visiting-scholars.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CURRICULUM ===== -->
+  <section id="curriculum">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Curriculum</h2>
+        <p class="section-desc">Academic programs and course offerings at the Graduate Institute of Journalism</p>
+      </div>
+      <div class="curriculum-body">
+        <div class="curriculum-text">
+          <p>The Graduate Institute of Journalism offers a flexible two-year master's program designed to develop both theoretical rigor and professional skills. Students may choose to specialize in digital journalism, media studies, or pursue an interdisciplinary track drawing from NTU's broader academic community.</p>
+          <p>The curriculum is structured around three pillars: <strong>Core Journalism Courses</strong>, which build foundational reporting, writing, and editing skills; <strong>Research Methods</strong>, which equip students with quantitative and qualitative tools for academic inquiry; and <strong>Elective Seminars</strong>, which allow students to pursue topics ranging from political communication and media law to data journalism and cross-media storytelling.</p>
+          <p>The <strong>Digital Journalism Specialization Program</strong> offers additional training in web production, social media analysis, data visualization, and computational methods. Students in this track complete a capstone project combining journalistic craft with technical innovation.</p>
+        </div>
+        <div class="curriculum-tracks">
+          <div class="curriculum-track">
+            <h4>General Journalism Track</h4>
+            <p>The core graduate journalism program covering reporting, editing, media theory, and research methods. Open to all incoming students.</p>
+          </div>
+          <div class="curriculum-track">
+            <h4>Digital Journalism Specialization</h4>
+            <p>An advanced track integrating data journalism, web production, and computational analysis. Students complete a digital capstone project.</p>
+          </div>
+          <div class="curriculum-track">
+            <h4>Bachelor of Social Science Pathway</h4>
+            <p>A special track for outstanding NTU undergraduates combining journalism training with social science research coursework.</p>
+          </div>
+          <div class="curriculum-track">
+            <h4>Cross-Campus Electives</h4>
+            <p>Students may draw on the full breadth of NTU's departments — science, medicine, law, and business — to deepen subject expertise.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -309,11 +359,24 @@
         </div>`;
     }
 
+    // ── Visiting Scholar row builder ─────────────────────────────────────
+    function buildScholarRow(s) {
+      const zh = s.nameZh ? `<span class="scholar-name-zh">(${esc(s.nameZh)})</span>` : '';
+      const area = s.area ? `<span class="scholar-area">${esc(s.area)}</span>` : '';
+      const period = s.period ? `<div class="scholar-period">${esc(s.period)}</div>` : '';
+      return `<div class="scholar-row">
+          <div class="scholar-name">${esc(s.name)}${zh}</div>
+          <div class="scholar-affil">${esc(s.affiliation || '')}</div>
+          <div class="scholar-meta">${period}${area}</div>
+        </div>`;
+    }
+
     // ── Load JSON data ───────────────────────────────────────────────────
     Promise.all([
       fetch('data/news.json').then(r => r.json()),
-      fetch('data/faculty.json').then(r => r.json())
-    ]).then(([news, faculty]) => {
+      fetch('data/faculty.json').then(r => r.json()),
+      fetch('data/visiting-scholars.json').then(r => r.json())
+    ]).then(([news, faculty, scholars]) => {
 
       // Sort: pinned first, then by date descending
       news.sort((a, b) => {
@@ -340,6 +403,16 @@
         if (grid) grid.innerHTML = (cfg.data || [])
           .map(f => buildFacultyCard(f, cfg.fulltime, cfg.remembrance)).join('');
       });
+
+      // Render visiting scholars
+      const scholarsList = document.getElementById('scholars-list');
+      if (scholarsList) {
+        if (scholars.length === 0) {
+          scholarsList.innerHTML = '<p style="padding:1.5rem;color:var(--text-500);font-size:0.9rem;">No visiting scholars at this time.</p>';
+        } else {
+          scholarsList.innerHTML = scholars.map(buildScholarRow).join('');
+        }
+      }
 
     }).catch(err => console.error('Data load failed:', err));
   </script>
