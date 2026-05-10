@@ -345,7 +345,7 @@ img { max-width: 100%; display: block; }
    SECTIONS — shared
    ============================================================ */
 
-section { padding: 5rem 5rem 10rem; }
+section { padding: 5rem 15% 10rem; }
 
 .section-inner {
   max-width: 1200px;
@@ -1183,7 +1183,7 @@ footer { background: var(--maroon-dark); }
   .faculty-grid { grid-template-columns: 1fr; }
   .faculty-photo-wrap { width: 80px; }
   .intro-stats { gap: 1.5rem; }
-  section { padding: 3.5rem 2rem 7rem; }
+  section { padding: 3.5rem 6% 7rem; }
   .hero { padding: 4rem 1rem 3rem; }
 }
 
