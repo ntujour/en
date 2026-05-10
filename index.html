@@ -83,21 +83,21 @@
           </div>
         </div>
         <div class="intro-pillars">
-          <div class="pillar">
-            <h4>Journalism Skills</h4>
-            <p>Cultivating advanced journalism techniques and knowledge through both theory and professional practice.</p>
+          <div class="pillar-tag">
+            <button class="pillar-btn" aria-expanded="false">#Journalism Skills</button>
+            <div class="pillar-body" hidden>Cultivating advanced journalism techniques and knowledge through both theory and professional practice.</div>
           </div>
-          <div class="pillar">
-            <h4>Critical Thinking</h4>
-            <p>Developing independent thinking, multicultural awareness, and civic responsibility essential for responsible journalism.</p>
+          <div class="pillar-tag">
+            <button class="pillar-btn" aria-expanded="false">#Critical Thinking</button>
+            <div class="pillar-body" hidden>Developing independent thinking, multicultural awareness, and civic responsibility essential for responsible journalism.</div>
           </div>
-          <div class="pillar">
-            <h4>Global Outlook</h4>
-            <p>Enhancing an international perspective through academic exchange, cross-campus collaboration, and media research.</p>
+          <div class="pillar-tag">
+            <button class="pillar-btn" aria-expanded="false">#Global Outlook</button>
+            <div class="pillar-body" hidden>Enhancing an international perspective through academic exchange, cross-campus collaboration, and media research.</div>
           </div>
-          <div class="pillar">
-            <h4>Subject Expertise</h4>
-            <p>Strengthening academic depth by drawing on NTU's rich resources across science, medicine, law, and business.</p>
+          <div class="pillar-tag">
+            <button class="pillar-btn" aria-expanded="false">#Subject Expertise</button>
+            <div class="pillar-body" hidden>Strengthening academic depth by drawing on NTU's rich resources across science, medicine, law, and business.</div>
           </div>
         </div>
       </div>
@@ -249,6 +249,16 @@
   </footer>
 
   <script>
+    // ── Pillar hashtag toggles ───────────────────────────────────────────
+    document.querySelectorAll('.pillar-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        const body = btn.nextElementSibling;
+        btn.setAttribute('aria-expanded', String(!expanded));
+        if (expanded) { body.hidden = true; } else { body.hidden = false; }
+      });
+    });
+
     // ── Scroll-spy: highlight active sidebar link ────────────────────────
     const sections = document.querySelectorAll('section[id]');
     const sideLinks = document.querySelectorAll('.sidebar-nav-link[data-section]');
