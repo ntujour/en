@@ -48,7 +48,8 @@ img { max-width: 100%; display: block; }
    ============================================================ */
 
 .site-header {
-  background: var(--maroon);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(103, 25, 25, 0.12);
   height: 54px;
   display: flex;
   align-items: center;
@@ -56,7 +57,7 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
   gap: 1rem;
 }
 
@@ -73,7 +74,7 @@ img { max-width: 100%; display: block; }
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--maroon);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -83,9 +84,35 @@ img { max-width: 100%; display: block; }
 .site-header-sub {
   font-family: -apple-system, sans-serif;
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(103, 25, 25, 0.45);
   letter-spacing: 0.04em;
   white-space: nowrap;
+}
+
+/* Icon links (Facebook, NTU, etc.) */
+.site-header-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.site-header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius);
+  color: var(--maroon);
+  opacity: 0.55;
+  text-decoration: none;
+  transition: opacity 0.15s, background 0.15s;
+}
+
+.site-header-icon:hover {
+  opacity: 1;
+  background: rgba(103, 25, 25, 0.07);
 }
 
 .site-header-lang {
@@ -95,17 +122,17 @@ img { max-width: 100%; display: block; }
   font-family: -apple-system, sans-serif;
   font-size: 0.82rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--maroon);
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(103, 25, 25, 0.3);
   border-radius: var(--radius);
   transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 
 .site-header-lang:hover {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.7);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--maroon);
+  border-color: var(--maroon);
 }
 
 
