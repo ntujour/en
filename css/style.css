@@ -142,23 +142,26 @@ img { max-width: 100%; display: block; }
 
 .site-layout {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   min-height: calc(100vh - 72px);
 }
 
-/* ── Left sidebar nav ── */
+/* ── Top nav bar ── */
 .site-sidebar {
-  width: 250px;
-  flex-shrink: 0;
-  background: var(--bg);
-  border-right: 1px solid var(--border);
+  width: 100%;
+  height: auto;
   position: sticky;
   top: 72px;
-  height: calc(100vh - 72px);
-  overflow-y: auto;
+  z-index: 900;
+  background: var(--bg);
+  border-right: none;
+  border-bottom: 1px solid var(--border);
+  overflow: visible;
   display: flex;
-  flex-direction: column;
-  padding-left: 5px;
+  flex-direction: row;
+  padding-left: 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
 .sidebar-institute {
@@ -191,8 +194,9 @@ img { max-width: 100%; display: block; }
 }
 
 .sidebar-nav {
-  padding: 1rem 0;
+  padding: 0;
   flex: 1;
+  display: flex;
 }
 
 .sidebar-nav-label {
@@ -208,37 +212,40 @@ img { max-width: 100%; display: block; }
 
 .sidebar-nav-list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .sidebar-nav-link {
   display: block;
-  padding: 0.6rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-700);
   text-decoration: none;
-  border-left: 3px solid transparent;
+  border-left: none;
+  border-bottom: 3px solid transparent;
   transition: color 0.15s, border-color 0.15s, background 0.15s;
+  white-space: nowrap;
 }
 
 .sidebar-nav-link:hover {
   color: var(--maroon);
-  border-left-color: var(--maroon);
+  border-bottom-color: var(--maroon);
   background: var(--bg-alt);
 }
 
 .sidebar-nav-link.active {
   color: var(--maroon);
-  border-left-color: var(--gold);
+  border-bottom-color: var(--gold);
   background: var(--bg-alt);
   font-weight: 700;
 }
 
 .sidebar-nav-sub-list {
-  list-style: none;
-  border-left: 3px solid var(--border);
-  margin: 0 0 0.25rem 1.25rem;
+  display: none;
 }
 
 .sidebar-nav-sub-link {
@@ -257,7 +264,8 @@ img { max-width: 100%; display: block; }
 
 /* ── Main content area ── */
 .site-main {
-  flex: 1;
+  width: 100%;
+  max-width: 1100px;
   min-width: 0;
 }
 
@@ -1149,7 +1157,6 @@ footer { background: var(--maroon-dark); }
    ============================================================ */
 
 @media (max-width: 960px) {
-  .site-sidebar { width: 200px; }
   .intro-body { gap: 1.5rem; }
   .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
   .profile-body-inner { grid-template-columns: 1fr; }
@@ -1158,36 +1165,7 @@ footer { background: var(--maroon-dark); }
 }
 
 @media (max-width: 720px) {
-  /* Sidebar collapses to a horizontal sticky strip below the header */
-  .site-layout { flex-direction: column; }
-  .site-sidebar {
-    width: 100%;
-    height: auto;
-    position: sticky;          /* stays pinned as user scrolls */
-    top: 72px;
-    z-index: 900;
-    background: #ffffff;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  }
-  .sidebar-institute { display: none; }
-  .sidebar-nav { padding: 0; display: flex; }
-  .sidebar-nav-label { display: none; }
-  .sidebar-nav-list { display: flex; }
-  .sidebar-nav-sub-list { display: none; }   /* hide faculty sub-items on small screens */
-  .sidebar-nav-link {
-    padding: 0.65rem 1rem;
-    border-left: none;
-    border-bottom: 3px solid transparent;
-  }
-  .sidebar-nav-link:hover, .sidebar-nav-link.active {
-    border-bottom-color: var(--gold);
-    border-left-color: transparent;
-  }
+  .sidebar-nav-link { padding: 0.65rem 0.75rem; font-size: 0.82rem; }
   .faculty-grid { grid-template-columns: 1fr; }
   .faculty-photo-wrap { width: 90px; }
   .news-card { grid-template-columns: 1fr; }

@@ -265,7 +265,8 @@
     // ── Scroll-spy: highlight active sidebar link ────────────────────────
     const sections = document.querySelectorAll('section[id]');
     const sideLinks = document.querySelectorAll('.sidebar-nav-link[data-section]');
-    const HEADER_H = 72;
+    const nav = document.querySelector('.site-sidebar');
+    const HEADER_H = 72 + (nav ? nav.offsetHeight : 0);
 
     function onScroll() {
       let current = '';
