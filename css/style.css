@@ -380,10 +380,9 @@ section { padding: 5rem 1rem; }
 #introduction { background: var(--bg); }
 
 .intro-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .intro-text p {
@@ -1147,7 +1146,7 @@ footer { background: var(--maroon-dark); }
 
 @media (max-width: 960px) {
   .site-sidebar { width: 170px; }
-  .intro-body { grid-template-columns: 1fr; gap: 2.5rem; }
+  .intro-body { gap: 1.5rem; }
   .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
   .profile-body-inner { grid-template-columns: 1fr; }
   .profile-sidebar { position: static; }
