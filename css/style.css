@@ -692,14 +692,29 @@ footer { background: var(--maroon-dark); }
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 1rem 0;
+  padding: 4rem 1rem 3rem;
 }
 
 .footer-cols {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
-  padding-bottom: 3rem;
+}
+
+.footer-bottom {
+  background: #2a0808;
+}
+
+.footer-bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: -apple-system, sans-serif;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
 }
 
 .footer-brand-name {
@@ -749,19 +764,8 @@ footer { background: var(--maroon-dark); }
 
 .footer-col a:hover { color: white; }
 
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
-  padding: 1.25rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: -apple-system, sans-serif;
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.4);
-}
-
-.footer-bottom a { color: rgba(255,255,255,0.5); text-decoration: none; }
-.footer-bottom a:hover { color: rgba(255,255,255,0.8); }
+.footer-bottom-inner a { color: rgba(255,255,255,0.5); text-decoration: none; }
+.footer-bottom-inner a:hover { color: rgba(255,255,255,0.8); }
 
 
 /* ============================================================
@@ -1188,7 +1192,7 @@ footer { background: var(--maroon-dark); }
   .news-card { grid-template-columns: 1fr; }
   .news-meta { display: flex; align-items: center; gap: 0.75rem; text-align: left; }
   .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
-  .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+  .footer-bottom-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
   .profile-header-inner { grid-template-columns: 1fr; }
   .profile-photo-wrap { width: 120px; height: 150px; }
 }
