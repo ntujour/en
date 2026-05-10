@@ -337,14 +337,14 @@ img { max-width: 100%; display: block; }
    SECTIONS — shared
    ============================================================ */
 
-section { padding: 5rem 1rem; }
+section { padding: 10rem 2rem; }
 
 .section-inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.section-header { margin-bottom: 3rem; }
+.section-header { margin-bottom: 6rem; }
 
 .section-title {
   font-size: 1.85rem;
@@ -692,7 +692,7 @@ footer { background: var(--maroon-dark); }
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 1rem 3rem;
+  padding: 8rem 2rem 6rem;
 }
 
 .footer-cols {
@@ -1205,7 +1205,7 @@ footer { background: var(--maroon-dark); }
   .faculty-grid { grid-template-columns: 1fr; }
   .faculty-photo-wrap { width: 80px; }
   .intro-stats { gap: 1.5rem; }
-  section { padding: 3.5rem 1rem; }
+  section { padding: 7rem 2rem; }
   .hero { padding: 4rem 1rem 3rem; }
 }
 
