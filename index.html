@@ -127,8 +127,11 @@
         <h2 class="section-title">News</h2>
         <p class="section-desc">Latest news and events from the Graduate Institute of Journalism</p>
       </div>
-      <div class="news-list">
-
+      <div class="news-list"></div>
+      <div class="news-pagination" id="news-pagination">
+        <button class="news-page-btn" id="news-prev-btn">&#8592; Prev</button>
+        <span class="news-page-info" id="news-page-info"></span>
+        <button class="news-page-btn" id="news-next-btn">Next &#8594;</button>
       </div>
     </div>
   </section>
@@ -385,25 +388,22 @@
 
     function fmtDate(dateStr) {
       if (!dateStr) return '';
-      // Accept YYYY-MM-DD or YYYY
       const d = new Date(dateStr.length === 4 ? dateStr + '-01-01' : dateStr);
-      return isNaN(d) ? dateStr : d.getFullYear().toString();
+      if (isNaN(d)) return dateStr;
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
     }
 
     // ── News card builder ────────────────────────────────────────────────
     function buildNewsCard(item) {
       const tagClass = TAG_CLASS[item.tag] || 'tag-forum';
-      const pin = item.pinned
-        ? `<span class="news-pin" title="Pinned">📌</span>`
-        : '';
+      const pin = item.pinned ? `<span class="news-pin">●</span>` : '';
       return `<div class="news-card">
           <div class="news-meta">
-            <div class="news-date-year">${esc(fmtDate(item.date))}</div>
-            <span class="news-tag ${tagClass}">${esc(item.tag)}</span>
+            ${pin}<span class="news-date-full">${esc(fmtDate(item.date))}</span>
           </div>
           <div class="news-content">
-            <div class="news-title">${esc(item.title)}${pin}</div>
-            <div class="news-excerpt">${esc(item.excerpt)}</div>
+            <span class="news-tag ${tagClass}">${esc(item.tag)}</span>
+            <span class="news-title">${esc(item.title)}</span>
           </div>
         </div>`;
     }
@@ -434,9 +434,27 @@
         return (b.date || '').localeCompare(a.date || '');
       });
 
-      // Render news
+      // Render news with pagination
+      const NEWS_PER_PAGE = 5;
+      let newsPage = 0;
       const newsList = document.querySelector('.news-list');
-      if (newsList) newsList.innerHTML = news.map(buildNewsCard).join('');
+      const prevBtn = document.getElementById('news-prev-btn');
+      const nextBtn = document.getElementById('news-next-btn');
+      const pageInfo = document.getElementById('news-page-info');
+      const totalPages = Math.ceil(news.length / NEWS_PER_PAGE);
+
+      function renderNewsPage() {
+        const start = newsPage * NEWS_PER_PAGE;
+        if (newsList) newsList.innerHTML = news.slice(start, start + NEWS_PER_PAGE).map(buildNewsCard).join('');
+        if (pageInfo) pageInfo.textContent = `${newsPage + 1} / ${totalPages}`;
+        if (prevBtn) prevBtn.disabled = newsPage === 0;
+        if (nextBtn) nextBtn.disabled = newsPage >= totalPages - 1;
+        if (totalPages <= 1) document.getElementById('news-pagination').style.display = 'none';
+      }
+
+      prevBtn?.addEventListener('click', () => { if (newsPage > 0) { newsPage--; renderNewsPage(); } });
+      nextBtn?.addEventListener('click', () => { if (newsPage < totalPages - 1) { newsPage++; renderNewsPage(); } });
+      renderNewsPage();
 
       // Render faculty tabs
       const tabs = {
