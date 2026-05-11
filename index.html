@@ -23,6 +23,9 @@
       <a href="https://www.ntu.edu.tw/english/" target="_blank" rel="noopener" class="site-header-icon" aria-label="NTU Homepage">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
       </a>
+      <a href="https://www.youtube.com/@KnowNewsNTUJournalism/videos" target="_blank" rel="noopener" class="site-header-icon" aria-label="YouTube">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
     </div>
         <a href="https://ntujour.github.io/" target="_blank" rel="noopener" class="site-header-lang">中文</a>
   </header>
@@ -264,13 +267,22 @@
   </footer>
 
   <script>
-    // ── Image gallery arrows ─────────────────────────────────────────────
+    // ── Image gallery arrows (infinite loop) ────────────────────────────
     (function () {
       const vp = document.getElementById('gallery-viewport');
       if (!vp) return;
-      const slideW = () => vp.firstElementChild ? vp.firstElementChild.getBoundingClientRect().width + 6 : 0;
-      document.getElementById('gallery-prev')?.addEventListener('click', () => vp.scrollBy({ left: -slideW(), behavior: 'smooth' }));
-      document.getElementById('gallery-next')?.addEventListener('click', () => vp.scrollBy({ left:  slideW(), behavior: 'smooth' }));
+      const slides = [...vp.querySelectorAll('.gallery-slide')];
+      const total = slides.length;
+      let current = 0;
+
+      function goTo(idx, instant) {
+        current = ((idx % total) + total) % total;
+        const w = slides[0].getBoundingClientRect().width + 6;
+        vp.scrollTo({ left: current * w, behavior: instant ? 'instant' : 'smooth' });
+      }
+
+      document.getElementById('gallery-prev')?.addEventListener('click', () => goTo(current - 1));
+      document.getElementById('gallery-next')?.addEventListener('click', () => goTo(current + 1));
     })();
 
     // ── Pillar hashtag toggles ───────────────────────────────────────────
