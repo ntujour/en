@@ -56,6 +56,18 @@
     <!-- MAIN CONTENT -->
     <main class="site-main">
 
+  <!-- ===== IMAGE GALLERY ===== -->
+  <section id="gallery">
+    <div class="gallery-viewport" id="gallery-viewport">
+      <div class="gallery-slide"><span class="gallery-placeholder-label">Photo 1</span></div>
+      <div class="gallery-slide"><span class="gallery-placeholder-label">Photo 2</span></div>
+      <div class="gallery-slide"><span class="gallery-placeholder-label">Photo 3</span></div>
+      <div class="gallery-slide"><span class="gallery-placeholder-label">Photo 4</span></div>
+    </div>
+    <button class="gallery-arrow gallery-arrow-prev" id="gallery-prev" aria-label="Previous">&#8249;</button>
+    <button class="gallery-arrow gallery-arrow-next" id="gallery-next" aria-label="Next">&#8250;</button>
+  </section>
+
   <!-- ===== INTRODUCTION ===== -->
   <section id="introduction">
     <div class="section-inner">
@@ -252,6 +264,15 @@
   </footer>
 
   <script>
+    // ── Image gallery arrows ─────────────────────────────────────────────
+    (function () {
+      const vp = document.getElementById('gallery-viewport');
+      if (!vp) return;
+      const slideW = () => vp.firstElementChild ? vp.firstElementChild.getBoundingClientRect().width + 6 : 0;
+      document.getElementById('gallery-prev')?.addEventListener('click', () => vp.scrollBy({ left: -slideW(), behavior: 'smooth' }));
+      document.getElementById('gallery-next')?.addEventListener('click', () => vp.scrollBy({ left:  slideW(), behavior: 'smooth' }));
+    })();
+
     // ── Pillar hashtag toggles ───────────────────────────────────────────
     document.querySelectorAll('.pillar-btn').forEach(btn => {
       btn.addEventListener('click', () => {
