@@ -403,7 +403,7 @@ section { padding: 5rem 15% 10rem; }
 .intro-pillars {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+  gap: 0.75rem;
 }
 
 .pillar-tag {}
