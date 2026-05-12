@@ -396,14 +396,15 @@
     // ── News card builder ────────────────────────────────────────────────
     function buildNewsCard(item) {
       const tagClass = TAG_CLASS[item.tag] || 'tag-forum';
-      const pin = item.pinned ? `<span class="news-pin">●</span>` : '';
+      const excerpt = item.excerpt ? `<div class="news-excerpt">${esc(item.excerpt)}</div>` : '';
       return `<div class="news-card">
           <div class="news-meta">
-            ${pin}<span class="news-date-full">${esc(fmtDate(item.date))}</span>
+            <span class="news-date-full">${esc(fmtDate(item.date))}</span>
+            <span class="news-tag ${tagClass}">${esc(item.tag)}</span>
           </div>
           <div class="news-content">
-            <span class="news-tag ${tagClass}">${esc(item.tag)}</span>
-            <span class="news-title">${esc(item.title)}</span>
+            <div class="news-title">${esc(item.title)}</div>
+            ${excerpt}
           </div>
         </div>`;
     }
