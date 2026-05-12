@@ -411,7 +411,7 @@ section { padding: 5rem 15% 10rem; }
 .pillar-tag {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .pillar-btn {
@@ -423,7 +423,7 @@ section { padding: 5rem 15% 10rem; }
   border-radius: 9999px;
   cursor: pointer;
   padding: 12px 20px;
-  margin: 0.4rem;
+  margin: 0.4rem 0.4rem 0.4rem 0;
   font-family: -apple-system, sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
