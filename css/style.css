@@ -1218,7 +1218,7 @@ footer { background: var(--maroon-dark); }
   .intro-body { gap: 1.5rem; }
   .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
   .profile-body-inner { grid-template-columns: 1fr; }
-  .profile-sidebar { position: static; }
+  .profile-sidebar { display: none; }
   .profile-meta-inner { grid-template-columns: 1fr; }
   .faculty-compact-grid { grid-template-columns: repeat(2, 1fr); }
 }
