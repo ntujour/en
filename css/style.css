@@ -1214,6 +1214,10 @@ footer { background: var(--maroon-dark); }
    RESPONSIVE
    ============================================================ */
 
+@media (max-width: 1200px) {
+  .faculty-compact-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 960px) {
   html { font-size: 15px; }
   .intro-body { gap: 1.5rem; }
@@ -1221,7 +1225,7 @@ footer { background: var(--maroon-dark); }
   .profile-body-inner { grid-template-columns: 1fr; }
   .profile-sidebar { display: none; }
   .profile-meta-inner { grid-template-columns: 1fr; }
-  .faculty-compact-grid { grid-template-columns: repeat(2, 1fr); }
+  /* faculty-compact-grid handled at ≤1200px */
 
   /* News: stack meta (tag + date) above content (title + excerpt) */
   .news-card {
@@ -1254,7 +1258,6 @@ footer { background: var(--maroon-dark); }
 
 @media (max-width: 600px) {
   html { font-size: 13px; }
-  .faculty-compact-grid { grid-template-columns: 1fr; }
   .ftag { font-size: 0.6rem; padding: 0.12rem 0.35rem; }
   .faculty-name, .faculty-compact-name { font-size: 1.2rem; }
   .news-excerpt { display: none; }
