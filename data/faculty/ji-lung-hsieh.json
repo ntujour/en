@@ -6,9 +6,19 @@
   "photo": "../image/Ji-Lung%20Hsieh.png",
   "placeholder": "謝",
   "contacts": [
-    { "type": "phone", "value": "(02) 3366-9867" },
-    { "type": "email", "value": "jerryhsieh@ntu.edu.tw" },
-    { "type": "web", "text": "C.C.Lab Website", "url": "https://sites.google.com/view/cclab/home" }
+    {
+      "type": "phone",
+      "value": "(02) 3366-9867"
+    },
+    {
+      "type": "email",
+      "value": "jerryhsieh@ntu.edu.tw"
+    },
+    {
+      "type": "web",
+      "text": "C.C.Lab Website",
+      "url": "https://sites.google.com/view/cclab/home"
+    }
   ],
   "sections": [
     {
@@ -24,10 +34,10 @@
       "heading": "Experience",
       "type": "list",
       "items": [
-        "2017.08 – present &nbsp;&nbsp; Associate Professor, Graduate Institute of Journalism, National Taiwan University",
-        "2016.02 – 2016.07 &nbsp;&nbsp; Associate Professor, Graduate Institute of Library and Information Science, National Taiwan Normal University",
-        "2010.02 – 2016.01 &nbsp;&nbsp; Assistant Professor, Graduate Institute of Library and Information Science, National Taiwan Normal University",
-        "2009.08 – 2010.01 &nbsp;&nbsp; Assistant Professor, Department of Computer Science, University of Taipei"
+        "Associate Professor, Graduate Institute of Journalism, National Taiwan University (2017.08 – present)",
+        "Associate Professor, Graduate Institute of Library and Information Science, National Taiwan Normal University (2016.02 – 2016.07)",
+        "Assistant Professor, Graduate Institute of Library and Information Science, National Taiwan Normal University (2010.02 – 2016.01)",
+        "Assistant Professor, Department of Computer Science, University of Taipei (2009.08 – 2010.01)"
       ]
     },
     {
@@ -52,8 +62,8 @@
       "heading": "Invited Speeches",
       "type": "list",
       "items": [
-        "2016.11.09 — Workshop on conducting eye-tracking by portable eye-trackers and open software. Centre for Information Technology in Education, Faculty of Education, The University of Hong Kong.",
-        "2016.06.04 — Play to learn: How mobile games can be good for our kids? CITE Research Symposium 2016 \"Engaging Learners: Games and Flipped Learning\". The University of Hong Kong."
+        "Workshop on conducting eye-tracking by portable eye-trackers and open software. Centre for Information Technology in Education, Faculty of Education, The University of Hong Kong. (2016.11.09)",
+        "Play to learn: How mobile games can be good for our kids? CITE Research Symposium 2016 \"Engaging Learners: Games and Flipped Learning\". The University of Hong Kong. (2016.06.04)"
       ]
     },
     {
@@ -92,7 +102,10 @@
       "email": "jerryhsieh@ntu.edu.tw"
     },
     "externalLinks": [
-      { "text": "C.C.Lab", "url": "https://sites.google.com/view/cclab/home" }
+      {
+        "text": "C.C.Lab",
+        "url": "https://sites.google.com/view/cclab/home"
+      }
     ]
   }
 }

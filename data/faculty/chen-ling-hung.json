@@ -6,8 +6,14 @@
   "photo": "../image/Chen-Ling%20Hung.jpg",
   "placeholder": "洪",
   "contacts": [
-    { "type": "phone", "value": "(02) 3366-3124" },
-    { "type": "email", "value": "clhung@ntu.edu.tw" }
+    {
+      "type": "phone",
+      "value": "(02) 3366-3124"
+    },
+    {
+      "type": "email",
+      "value": "clhung@ntu.edu.tw"
+    }
   ],
   "sections": [
     {
@@ -23,26 +29,26 @@
       "heading": "Experiences",
       "type": "list",
       "items": [
-        "2015.8–Present: Professor, Graduate Institute of Journalism, National Taiwan University",
-        "2012.8–2015.7: Director, Graduate Institute of Journalism, National Taiwan University",
-        "2008.8–2015.7: Associate Professor, Graduate Institute of Journalism, National Taiwan University",
-        "2005.8–2008.7: Assistant Professor, Graduate Institute of Journalism, National Taiwan University",
-        "2004.8–2005.7: Assistant Professor, Department of Communication Arts, Fu Jen Catholic University",
-        "1999–2000: Political Reporter, <em>Taipei Times</em> and <em>Liberty Times</em>",
-        "1997–1999: Reporter and Editor, <em>Wealth Magazine</em>",
-        "1996–1997: Political Reporter, <em>Taiwan Daily</em>"
+        "Professor, Graduate Institute of Journalism, National Taiwan University (2015.8–Present)",
+        "Director, Graduate Institute of Journalism, National Taiwan University (2012.8–2015.7)",
+        "Associate Professor, Graduate Institute of Journalism, National Taiwan University (2008.8–2015.7)",
+        "Assistant Professor, Graduate Institute of Journalism, National Taiwan University (2005.8–2008.7)",
+        "Assistant Professor, Department of Communication Arts, Fu Jen Catholic University (2004.8–2005.7)",
+        "Political Reporter, <em>Taipei Times</em> and <em>Liberty Times</em> (1999–2000)",
+        "Reporter and Editor, <em>Wealth Magazine</em> (1997–1999)",
+        "Political Reporter, <em>Taiwan Daily</em> (1996–1997)"
       ]
     },
     {
       "heading": "Awards and Honors",
       "type": "list",
       "items": [
-        "2011: National Science Council International Research Grant",
-        "2010–2011: Fulbright Exchange Scholar Grant",
-        "2003: Top student paper in communication technology section, International Communications Association",
-        "2003: Second place, student paper competition, Pacific Telecommunications Council",
-        "2000: Public scholarship, Ministry of Education, Taiwan",
-        "1999: Ambassadorial Scholarship, Rotary Foundation"
+        "National Science Council International Research Grant (2011)",
+        "Fulbright Exchange Scholar Grant (2010–2011)",
+        "Top student paper in communication technology section, International Communications Association (2003)",
+        "Second place, student paper competition, Pacific Telecommunications Council (2003)",
+        "Public scholarship, Ministry of Education, Taiwan (2000)",
+        "Ambassadorial Scholarship, Rotary Foundation (1999)"
       ]
     },
     {
