@@ -6,7 +6,11 @@
       "title": "Associate Professor & Director",
       "photo": "image/Ji-Lung%20Hsieh.png",
       "placeholder": "謝",
-      "tags": ["Computational Journalism", "Social Media", "Data Analysis"],
+      "tags": [
+        "Data Journalism",
+        "Web Design",
+        "Social Network Analysis"
+      ],
       "profileUrl": "faculty/ji-lung-hsieh.html"
     },
     {
@@ -14,7 +18,11 @@
       "nameZh": "林麗雲",
       "title": "Professor",
       "photo": "image/Lih-Yun%20Lin.jpg",
-      "tags": ["Media Policy", "Public Service Media", "Press Freedom"],
+      "tags": [
+        "History of News",
+        "Media Sociology",
+        "Communication Theories"
+      ],
       "profileUrl": "faculty/lih-yun-lin.html"
     },
     {
@@ -23,7 +31,11 @@
       "title": "Professor",
       "photo": "image/Chen-Ling%20Hung.jpg",
       "placeholder": "洪",
-      "tags": ["Communication Law", "Broadcasting Policy", "Digital Divide"],
+      "tags": [
+        "Communication Laws",
+        "Globalization and Communications",
+        "Political Economy of Communication"
+      ],
       "profileUrl": "faculty/chen-ling-hung.html"
     },
     {
@@ -31,7 +43,11 @@
       "title": "Professor",
       "photo": "image/Adrian%20Rauchfleisch.png",
       "placeholder": "AR",
-      "tags": ["Political Communication", "Social Media", "Disinformation"],
+      "tags": [
+        "Social Media",
+        "Political Communication",
+        "Methods for Communication Science"
+      ],
       "profileUrl": "faculty/adrian-rauchfleisch.html"
     },
     {
@@ -40,7 +56,11 @@
       "title": "Associate Professor",
       "photo": "image/Hui-Ju%20Tsai.jpg",
       "placeholder": "蔡",
-      "tags": ["New Media", "Civic Engagement", "Cultural Studies"],
+      "tags": [
+        "STS",
+        "Cultural Studies",
+        "Public Service Media"
+      ],
       "profileUrl": "faculty/hui-ju-tsai.html"
     },
     {
@@ -48,7 +68,11 @@
       "nameZh": "詹怡宜",
       "title": "Associate Professor",
       "photo": "image/I-I%20Chan.png",
-      "tags": ["TV Journalism", "News Production", "Public Affairs"],
+      "tags": [
+        "TV Journalism",
+        "News Production",
+        "Public Affairs"
+      ],
       "profileUrl": "faculty/i-i-chan.html"
     },
     {
@@ -57,7 +81,11 @@
       "title": "Assistant Professor",
       "photo": "image/Lokman%20Tsui.jpg",
       "placeholder": "徐",
-      "tags": ["Press Freedom", "Internet Censorship", "Digital Security"],
+      "tags": [
+        "Information Sociologies",
+        "Freedom of Speech and Society",
+        "Digital Security"
+      ],
       "profileUrl": "faculty/lokman-tsui.html"
     }
   ],
@@ -67,21 +95,30 @@
       "nameZh": "王泰俐",
       "title": "Professor",
       "photo": "image/Tai-Li%20Wang.png",
-      "tags": ["Media Psychology", "Political Communication", "Online Communication"]
+      "tags": [
+        "Media Psychology",
+        "Political Communication",
+        "Online Communication"
+      ]
     },
     {
       "name": "Shuen-Xiao Chen",
       "nameZh": "陳順孝",
       "title": "Professor",
       "photo": "image/Shuen-Xiao%20Chen.jpg",
-      "tags": ["Journalism Practice", "Digital Media"]
+      "tags": [
+        "Journalism Practice",
+        "Digital Media"
+      ]
     },
     {
       "name": "Lin-Lin Ku",
       "nameZh": "古玲玲",
       "title": "Associate Professor",
       "photo": "image/Lin-Lin%20Ku.png",
-      "tags": ["Communication Research"]
+      "tags": [
+        "Communication Research"
+      ]
     }
   ],
   "specialist": [
@@ -89,73 +126,101 @@
       "name": "Chie-De Li",
       "nameZh": "李志德",
       "photo": "image/Chie-De%20Li.jpg",
-      "tags": ["Reporting & Writing (II)"]
+      "tags": [
+        "Reporting & Writing (II)"
+      ]
     },
     {
       "name": "Yu-Fang Liang",
       "nameZh": "梁玉芳",
       "photo": "image/Yu-Fang%20Liang.jpg",
-      "tags": ["Reporting & Writing (II)"]
+      "tags": [
+        "Reporting & Writing (II)"
+      ]
     },
     {
       "name": "Sherry Lee",
       "nameZh": "李雪莉",
       "photo": "image/Sherry%20Lee.png",
-      "tags": ["Reporting & Writing (I)"]
+      "tags": [
+        "Reporting & Writing (I)"
+      ]
     },
     {
       "name": "Yan-Fu Lee",
       "nameZh": "李彥甫",
       "photo": "image/Yan-Fu%20Lee.jpg",
-      "tags": ["News Editing", "Information Design"]
+      "tags": [
+        "News Editing",
+        "Information Design"
+      ]
     },
     {
       "name": "Kuan-Sheng Yang",
       "nameZh": "楊光昇",
       "photo": "image/Kuan-Sheng%20Yang.jpg",
-      "tags": ["Photo Journalism"]
+      "tags": [
+        "Photo Journalism"
+      ]
     },
     {
       "name": "Li-Ren Liou",
       "nameZh": "劉力仁",
       "photo": "image/Li-Ren%20Liou.jpg",
-      "tags": ["Reporting & Writing (I)"]
+      "tags": [
+        "Reporting & Writing (I)"
+      ]
     },
     {
       "name": "Kai-Chun Cheng",
       "nameZh": "鄭凱駿",
       "photo": "image/Kai-Chun%20Cheng.png",
-      "tags": ["TV News Reporting (II)"]
+      "tags": [
+        "TV News Reporting (II)"
+      ]
     },
     {
       "name": "Fu-Yuan Shiau",
       "nameZh": "蕭富元",
       "photo": "image/Fu-Yuan%20Shiau.jpg",
-      "tags": ["Reporting & Writing"]
+      "tags": [
+        "Reporting & Writing"
+      ]
     },
     {
       "name": "Jie-Ping Zhang",
       "nameZh": "張潔平",
       "photo": "image/Jie-Ping%20Zhang.jpg",
-      "tags": ["Greater China Journalism"]
+      "tags": [
+        "Greater China Journalism"
+      ]
     },
     {
       "name": "Je-Bin Huang",
       "nameZh": "黃哲斌",
       "photo": "image/Je-Bin%20Huang.jpg",
-      "tags": ["Digital Innovation", "Media Management"]
+      "tags": [
+        "Digital Innovation",
+        "Media Management"
+      ]
     },
     {
       "name": "De-Lin Fang",
       "nameZh": "方德琳",
       "photo": "image/De-Lin%20Fang.jpg",
-      "tags": ["Business Reporting", "Finance Reporting"]
+      "tags": [
+        "Business Reporting",
+        "Finance Reporting"
+      ]
     },
     {
       "name": "Wan-Yu Wu",
       "nameZh": "吳婉瑜",
       "photo": "image/Wan-Yu%20Wu.jpg",
-      "tags": ["Digital Innovation", "Media Management"]
+      "tags": [
+        "Digital Innovation",
+        "Media Management"
+      ]
     }
   ],
   "emeritus": [
@@ -164,7 +229,11 @@
       "nameZh": "張錦華",
       "title": "Emeritus Professor",
       "photo": "image/Chin-Hua%20Chang.png",
-      "tags": ["Mass Communication Theory", "Critical Theory", "Multiculturalism"]
+      "tags": [
+        "Mass Communication Theory",
+        "Critical Theory",
+        "Multiculturalism"
+      ]
     }
   ],
   "joint": [
@@ -173,14 +242,22 @@
       "nameZh": "劉靜怡",
       "title": "Professor",
       "photo": "image/Ching-Yi%20Liu.jpg",
-      "tags": ["Information Law", "Law & Technology", "College of Law, NTU"]
+      "tags": [
+        "Information Law",
+        "Law & Technology",
+        "College of Law, NTU"
+      ]
     },
     {
       "name": "Hui-Chieh Su",
       "nameZh": "蘇慧婕",
       "title": "Associate Professor",
       "photo": "image/Hui-Chieh%20Su.jpg",
-      "tags": ["Media Law", "Ethics", "College of Law, NTU"]
+      "tags": [
+        "Media Law",
+        "Ethics",
+        "College of Law, NTU"
+      ]
     }
   ],
   "remembrance": [
@@ -188,14 +265,20 @@
       "name": "Rou-Jin Chen",
       "nameZh": "陳柔縉",
       "photo": "image/Rou-Jin%20Chen.jpg",
-      "tags": ["Reporting & Writing (II)", "Journalism & Cultural History"]
+      "tags": [
+        "Reporting & Writing (II)",
+        "Journalism & Cultural History"
+      ]
     },
     {
       "name": "Yen-Yuan Ni",
       "nameZh": "倪炎元",
       "title": "Professor",
       "photo": "image/Yen-Yuan%20Ni.jpg",
-      "tags": ["Public Relations", "Political Communication"]
+      "tags": [
+        "Public Relations",
+        "Political Communication"
+      ]
     }
   ]
 }
