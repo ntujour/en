@@ -1253,6 +1253,7 @@ footer { background: var(--maroon-dark); }
 }
 
 @media (max-width: 600px) {
+  html { font-size: 13px; }
   .faculty-compact-grid { grid-template-columns: 1fr; }
 }
 
