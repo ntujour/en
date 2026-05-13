@@ -1215,7 +1215,7 @@ footer { background: var(--maroon-dark); }
    ============================================================ */
 
 @media (max-width: 1200px) {
-  .faculty-compact-grid { grid-template-columns: 1fr; }
+  .faculty-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 960px) {
@@ -1225,7 +1225,7 @@ footer { background: var(--maroon-dark); }
   .profile-body-inner { grid-template-columns: 1fr; }
   .profile-sidebar { display: none; }
   .profile-meta-inner { grid-template-columns: 1fr; }
-  /* faculty-compact-grid handled at ≤1200px */
+  .faculty-compact-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* News: stack meta (tag + date) above content (title + excerpt) */
   .news-card {
@@ -1247,7 +1247,6 @@ footer { background: var(--maroon-dark); }
 
 @media (max-width: 720px) {
   .sidebar-nav-link { padding: 0.65rem 0.75rem; font-size: 0.82rem; }
-  .faculty-grid { grid-template-columns: 1fr; }
   .faculty-photo-wrap { width: 90px; }
   .news-card { gap: 0.4rem; }
   .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
@@ -1258,13 +1257,13 @@ footer { background: var(--maroon-dark); }
 
 @media (max-width: 600px) {
   html { font-size: 13px; }
+  .faculty-compact-grid { grid-template-columns: 1fr; }
   .ftag { font-size: 0.6rem; padding: 0.12rem 0.35rem; }
   .faculty-name, .faculty-compact-name { font-size: 1.2rem; }
   .news-excerpt { display: none; }
 }
 
 @media (max-width: 480px) {
-  .faculty-grid { grid-template-columns: 1fr; }
   .faculty-photo-wrap { width: 80px; }
   .intro-stats { gap: 1.5rem; }
   section { padding: 3.5rem 6% 7rem; }
