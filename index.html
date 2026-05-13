@@ -47,6 +47,7 @@
               <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="specialist">Adjunct Specialist</a></li>
               <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="emeritus">Prof. Emeritus</a></li>
               <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="joint">Jointly Appointed</a></li>
+              <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="retired">Retired</a></li>
               <li><a href="#faculty" class="sidebar-nav-sub-link" data-faculty-tab="remembrance">In Remembrance</a></li>
             </ul>
           </li>
@@ -151,6 +152,7 @@
         <button class="faculty-tab-btn" data-tab="specialist" role="tab" aria-selected="false">Adjunct Specialist</button>
         <button class="faculty-tab-btn" data-tab="emeritus" role="tab" aria-selected="false">Prof. Emeritus</button>
         <button class="faculty-tab-btn" data-tab="joint" role="tab" aria-selected="false">Jointly Appointed</button>
+        <button class="faculty-tab-btn" data-tab="retired" role="tab" aria-selected="false">Retired</button>
         <button class="faculty-tab-btn" data-tab="remembrance" role="tab" aria-selected="false">In Remembrance</button>
       </div>
 
@@ -183,6 +185,12 @@
       <div class="faculty-grid">
       </div>
       </div><!-- /.faculty-tab-panel#faculty-joint -->
+
+      <!-- ── Retired ── -->
+      <div id="faculty-retired" class="faculty-tab-panel">
+      <div class="faculty-grid">
+      </div>
+      </div><!-- /.faculty-tab-panel#faculty-retired -->
 
       <!-- ── In Remembrance ── -->
       <div id="faculty-remembrance" class="faculty-tab-panel">
@@ -464,6 +472,7 @@
         specialist:  { data: faculty.specialist,  fulltime: false, remembrance: false },
         emeritus:    { data: faculty.emeritus,    fulltime: false, remembrance: false },
         joint:       { data: faculty.joint,       fulltime: false, remembrance: false },
+        retired:     { data: faculty.retired,     fulltime: false, remembrance: false },
         remembrance: { data: faculty.remembrance, fulltime: false, remembrance: true  }
       };
       Object.entries(tabs).forEach(([key, cfg]) => {

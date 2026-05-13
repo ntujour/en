@@ -276,5 +276,19 @@
         "News Reporting"
       ]
     }
+  ],
+  "retired": [
+    {
+      "name": "Chao-Chen Lin",
+      "nameZh": "林照真",
+      "title": "Professor",
+      "photo": "image/Chao-Chen%20Lin.jpg",
+      "placeholder": "林",
+      "tags": [
+        "Visual Journalism",
+        "Investigative Journalism",
+        "In-depth Reporting"
+      ]
+    }
   ]
 }
