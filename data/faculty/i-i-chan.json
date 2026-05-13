@@ -18,45 +18,38 @@
       ]
     },
     {
-      "heading": "Professional Background",
-      "type": "text",
-      "content": "Prof. Chan brings more than three decades of frontline television journalism experience to the classroom. Before joining NTU in 2025, she held senior leadership roles at TVBS — one of Taiwan's leading cable news networks — most recently as Deputy General Manager of the News Department. Her career spans editorial direction, documentary production, and public affairs reporting, making her one of Taiwan's most accomplished broadcast journalists."
-    },
-    {
-      "heading": "Selected Professional Experience",
+      "heading": "Professional Experience",
       "type": "list",
       "items": [
+        "Associate Professor, Graduate Institute of Journalism, National Taiwan University (2025–present)",
         "Deputy General Manager, TVBS News Department (2020–2025)",
         "Producer and Host, <em>Step by Step: Discovering New Taiwan</em>, TVBS (2004–2025)",
-        "Director and Senior Editor, TVBS News (various roles, 1993–2020)"
+        "Director, TVBS News Department (2007–2020)",
+        "Staff Reporter, News Anchor, Head of Political Desk, Head of Special Reports Desk, Deputy Director of News Gathering Center, Deputy Managing Editor &amp; Producer, TVBS (1993–2007)",
+        "Adjunct Lecturer, Department of Journalism, Shih Hsin University (2005–2006)",
+        "Political Reporter, <em>United Evening News</em> (1992–1993)",
+        "Political Reporter, <em>Independence Evening Post</em> (1991–1992)",
+        "International News Editor/Translator, <em>China Times</em> (1988–1989)"
       ]
     },
     {
-      "heading": "Courses Taught",
-      "type": "list",
-      "items": [
-        "Television News Reporting (I) &amp; (II)",
-        "Government and Public Affairs Reporting",
-        "Current Affairs Forum: Planning and Production"
-      ]
-    },
-    {
-      "heading": "Honors &amp; Awards",
+      "heading": "Honors and Awards",
       "type": "list",
       "items": [
         "Eisenhower Fellow (2016)",
-        "Golden Bell Award — multiple years (2000–2009)",
-        "Distinguished Award for Excellence in Communication Management (2015)"
+        "Distinguished Award for Excellence in Communication Management (2015)",
+        "Award for Outstanding Contribution to Communication; Golden Wheel Award for Best Program Host, Rotary International Public Service Journalism Awards (2010)",
+        "Golden Bell Award for Educational Programming (2009)",
+        "Golden Bell Award for Best Program Host (2005)",
+        "Golden Bell Award for Investigative Reporting (2000)"
       ]
     }
   ],
   "sidebar": {
     "teachingField": [
-      "TV Journalism",
-      "News Production",
-      "Public Affairs Reporting",
-      "Current Affairs",
-      "Broadcast News"
+      "Television News Reporting",
+      "Government and Public Affairs Reporting",
+      "Current Affairs Forum: Planning and Production"
     ],
     "researchInterests": [],
     "contact": {
