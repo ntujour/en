@@ -1215,6 +1215,7 @@ footer { background: var(--maroon-dark); }
    ============================================================ */
 
 @media (max-width: 960px) {
+  html { font-size: 15px; }
   .intro-body { gap: 1.5rem; }
   .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
   .profile-body-inner { grid-template-columns: 1fr; }
