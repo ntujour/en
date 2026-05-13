@@ -36,7 +36,7 @@ body {
   font-family: Georgia, 'Times New Roman', serif;
   color: var(--text-900);
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 1.125rem; /* 1.125 × 16px = 18px at default; scales with html font-size at breakpoints */
 }
 
 a { color: var(--maroon); }
@@ -1256,6 +1256,7 @@ footer { background: var(--maroon-dark); }
   html { font-size: 13px; }
   .faculty-compact-grid { grid-template-columns: 1fr; }
   .ftag { font-size: 0.6rem; padding: 0.12rem 0.35rem; }
+  .faculty-name, .faculty-compact-name { font-size: 1.2rem; }
 }
 
 @media (max-width: 480px) {
