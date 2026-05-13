@@ -509,6 +509,18 @@
 
 ---
 
+## [2026-05-14 ~00:30 TST] — Fix ftag font size to match ≤960px size at all widths
+
+**Prompt summary:**
+> 「> 960px 時，我希望和 ≤ 960px 一樣，是 10.5px」
+
+**Actions taken:**
+- Changed `.ftag { font-size }` from `0.7rem` (= 11.2px at 16px base) to `10.5px` (fixed), so tags are consistently 10.5px at all widths above 600px.
+
+**Files modified:** `css/style.css`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
