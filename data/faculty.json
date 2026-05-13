@@ -33,8 +33,8 @@
       "placeholder": "洪",
       "tags": [
         "Communication Laws",
-        "Globalization and Communications",
-        "Political Economy of Communication"
+        "Globalization",
+        "Political Economy"
       ],
       "profileUrl": "faculty/chen-ling-hung.html"
     },
@@ -83,7 +83,7 @@
       "placeholder": "徐",
       "tags": [
         "Information Sociologies",
-        "Freedom of Speech and Society",
+        "Freedom of Speech",
         "Digital Security"
       ],
       "profileUrl": "faculty/lokman-tsui.html"
@@ -97,8 +97,7 @@
       "photo": "image/Tai-Li%20Wang.png",
       "tags": [
         "Media Psychology",
-        "Political Communication",
-        "Video Journalism"
+        "Political Communication"
       ]
     },
     {
@@ -286,8 +285,7 @@
       "placeholder": "林",
       "tags": [
         "Visual Journalism",
-        "Investigative Journalism",
-        "In-depth Reporting"
+        "Investigative Journalism"
       ]
     }
   ]
