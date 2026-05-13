@@ -275,6 +275,240 @@
 
 ---
 
+## [2026-05-13 ~12:50 TST] — Lokman Tsui profile: full content rewrite
+
+**Prompt summary:**
+> 「針對 lokman-tsui.html，請幫我做以下修改：1. Teaching Field 中，將標籤刪除，新增：Freedom of Speech and Society, Information Technologies, Information Sociologies 2. 刪除 Research Areas 3. 將以下內容加入頁面：Language, Employment, Books, Special Journal Issues, Journal Articles and Other Publications, Academic conferences and workshops, Presentations for civil society, government and others, Awards and Honors, Grants, Service (selected)」
+
+**Actions taken:**
+- Rewrote `data/faculty/lokman-tsui.json` with 10 sections from NTU faculty page.
+- Updated Teaching Field to: Freedom of Speech and Society, Information Technologies, Information Sociologies.
+- Added sections: Language (text type), Employment (6 items), Books (1), Special Journal Issues (1), Journal Articles and Other Publications (26 items), Academic Conferences and Workshops (15 items), Presentations for Civil Society, Government and Others (25 items), Awards and Honors (3), Grants (3), Service Selected (6).
+
+**Files modified:** `data/faculty/lokman-tsui.json`
+
+---
+
+## [2026-05-13 ~13:02 TST] — Sidebar overflow fix; External Links label updates; Adrian Rauchfleisch Teaching Field
+
+**Prompt summary:**
+> 「1. 所有 faculty 頁面的 sidebar-card，不要讓內容超出框框，可換行 2. lokman-tsui.html 的 External Links 文字改為「lokman.org」 3. adrian-rauchfleisch.html 的 External Links 文字改為「arauchfleisch.ch」 4. adrian-rauchfleisch.html 請刪除 Articles in Peer-Reviewed Journals，改為根據 https://arauchfleisch.ch/publications/ 的 Journal Article, Book Chapter, Working Paper 三區塊」
+> 「針對 adrian-rauchfleisch.html，請幫我做以下修改：1. Teaching Field 中，將標籤 Social Media and Social Network Analysis 刪除，新增：Social Media, Social Network Analysis, Communication Research Method」
+
+**Actions taken:**
+- Added `overflow-wrap: break-word; word-break: break-word; min-width: 0;` to `.sidebar-card` in `css/style.css`.
+- Changed `contacts[2].text` and `externalLinks[0].text` in `lokman-tsui.json` from "Personal Website" to "lokman.org".
+- Changed `externalLinks[0].text` in `adrian-rauchfleisch.json` from "Personal Website" to "arauchfleisch.ch".
+- Removed "Articles in Peer-Reviewed Journals" section from `adrian-rauchfleisch.json`; added 3 new sections: Journal Articles, Book Chapters, Working Papers (initially with placeholder items).
+- Updated Adrian Rauchfleisch Teaching Field: removed "Social Media and Social Network Analysis", added "Social Media", "Social Network Analysis", "Communication Research Method".
+
+**Files modified:** `css/style.css`, `data/faculty/lokman-tsui.json`, `data/faculty/adrian-rauchfleisch.json`
+
+---
+
+## [2026-05-13 ~13:08 TST] — Hui-Ju Tsai: reformat Experiences dates; fix External Links label
+
+**Prompt summary:**
+> 「針對 hui-ju-tsai.html，請幫我做以下修改：1. Experiences 區塊的內文，時間放至最後 2. External Links 連結文字改為「tintincai.wixsite.com/hjtsai」」
+
+**Actions taken:**
+- Reformatted all 3 Experiences items in `data/faculty/hui-ju-tsai.json`: moved date ranges to end in parentheses (e.g., `(2021.8–present)`).
+- Changed `contacts[2].text` and `externalLinks[0].text` to "tintincai.wixsite.com/hjtsai".
+
+**Files modified:** `data/faculty/hui-ju-tsai.json`
+
+---
+
+## [2026-05-13 ~16:24 TST] — Adrian Rauchfleisch: replace Journal Articles with curated list from arauchfleisch.ch
+
+**Prompt summary:**
+> 「針對 adrian-rauchfleisch.html，請幫我刪除 Journal Article 目前的內文，並新增：[31 items]」
+> 「針對 adrian-rauchfleisch.html，請幫我在 Journal Article 目前的內文後新增：[22 more items]」
+
+**Actions taken:**
+- Replaced Journal Articles section in `data/faculty/adrian-rauchfleisch.json` with curated list of 53 items (2013–2026) sourced from arauchfleisch.ch. Format: `Authors. (Year). Title. <em>Journal</em>.`
+
+**Files modified:** `data/faculty/adrian-rauchfleisch.json`
+
+---
+
+## [2026-05-13 ~16:44 TST] — Adrian Rauchfleisch: replace Book Chapters and Working Papers
+
+**Prompt summary:**
+> 「針對 adrian-rauchfleisch.html，請幫我刪除 Book Chapter 目前的內文，並新增：[16 items]」
+> 「針對 adrian-rauchfleisch.html，請幫我刪除 Working Papers 目前的內文，並新增：[2 items]」
+
+**Actions taken:**
+- Replaced Book Chapters section with 16 items (2015–2026).
+- Replaced Working Papers section with 2 items.
+
+**Files modified:** `data/faculty/adrian-rauchfleisch.json`
+
+---
+
+## [2026-05-13 ~16:47 TST] — Hide profile sidebar on narrow screens
+
+**Prompt summary:**
+> 「針對所有 faculty 頁面，當 profile-body 寬度無法放置兩欄（左內文、右 sidebar）時，請自動隱藏 sidebar，不用顯示在畫面上」
+
+**Actions taken:**
+- Added `@media (max-width: 960px)` rules to `css/style.css`: `.profile-sidebar { display: none; }`, `.profile-body-inner { grid-template-columns: 1fr; }`, `.profile-meta-inner { grid-template-columns: 1fr; }`.
+
+**Files modified:** `css/style.css`
+
+---
+
+## [2026-05-13 ~17:02 TST] — Responsive fixes: news cards stack at ≤960px; faculty tab buttons shrink
+
+**Prompt summary:**
+> 「針對 index.html 頁面，若頁面寬度 ≤960px：1. news 區塊從左右分欄改為上下 2. Faculty 區塊的按鍵調小，裡面的標籤也調小」
+
+**Actions taken:**
+- Added `@media (max-width: 960px)` rules: `.news-card { grid-template-columns: 1fr; gap: 0.4rem; }`, `.news-meta { flex-direction: row; align-items: center; gap: 0.6rem; }`, `.faculty-tab-btn { font-size: 0.75rem; padding: 0.35rem 0.7rem; }`.
+
+**Files modified:** `css/style.css`
+
+---
+
+## [2026-05-13 ~22:41 TST] — Update full-time faculty tags on index page
+
+**Prompt summary:**
+> 「針對 index.html 的頁面，幫我修改 faculty 下的 full-time 區塊：Ji-Lung Hsieh (Data Journalism, Web Design, Social Network Analysis), Lih-Yun Lin (History of News, Media Sociology, Communication Theories), Chen-Ling Hung (Communication Laws, Globalization and Communications, Political Economy of Communication), Adrian Rauchfleisch (Social Media, Political Communication, Methods for Communication Science), Hui-Ju Tsai (STS, Cultural Studies, Public Service Media), Lokman Tsui (Information Sociologies, Freedom of Speech and Society, Digital Security)」
+
+**Actions taken:**
+- Updated `tags` arrays for all 6 full-time faculty in `data/faculty.json`.
+
+**Files modified:** `data/faculty.json`
+
+---
+
+## [2026-05-13 ~22:43 TST] — Responsive font scaling at ≤960px and ≤600px
+
+**Prompt summary:**
+> 「當 ≤960px 時，請把整體頁面的字縮小」
+> 「當 ≤600px 時，字要比 ≤960px 再小」
+> 「≤960px ≤600px 的文字在 Curriculum 的內文沒被改到（fix）」
+
+**Actions taken:**
+- Changed `body { font-size: 18px }` to `body { font-size: 1.125rem }` so it inherits from `html` font-size and scales with breakpoints.
+- Added `html { font-size: 15px }` at `@media (max-width: 960px)` and `html { font-size: 13px }` at `@media (max-width: 600px)`.
+
+**Files modified:** `css/style.css`
+
+---
+
+## [2026-05-13 ~22:52 TST] — Update adjunct and specialist faculty tags; shrink tags at ≤600px
+
+**Prompt summary:**
+> 「針對 index.html 的頁面，幫我修改 faculty 下的 adjunct 區塊：Tai-Li Wang (add Video Journalism), Shuen-Xiao Chen (News Industry Innovation, Media Literacy), Lin-Lin Ku (Communication Statistics, News Writing in English)」
+> 「當 ≤600px，請把 index.html 頁面的所有 faculty 的 tag，字再縮小」
+> 「針對 index.html 的頁面，幫我修改 faculty 下的 Adjunct Specialist 區塊：[4 faculty single combined tags]」
+
+**Actions taken:**
+- Updated adjunct and specialist tags in `data/faculty.json`.
+- Added `@media (max-width: 600px)` rule: `.ftag { font-size: 0.6rem; padding: 0.12rem 0.35rem; }`.
+- Added `@media (max-width: 600px)` rule: `.faculty-name, .faculty-compact-name { font-size: 1.2rem; }` (2px larger than inherited base).
+
+**Files modified:** `data/faculty.json`, `css/style.css`
+
+---
+
+## [2026-05-13 ~23:02 TST] — Update Jointly Appointed and In Remembrance faculty tags
+
+**Prompt summary:**
+> 「針對 index.html 的頁面，幫我修改 faculty 下的 Jointly Appointed 區塊：Ching-Yi Liu (Communication and Society, Digital Humanities), Hui-Chieh Su (Philosophy of Communication, Logic)」
+> 「針對 index.html 的頁面，幫我修改 faculty 下的 In Remembrance 區塊：Rou-Jin Chen (Political Economy, News Editing), Yen-Yuan Ni (Media Ethics, News Writing)」
+
+**Actions taken:**
+- Updated `joint` and `remembrance` group tags in `data/faculty.json`.
+
+**Files modified:** `data/faculty.json`
+
+---
+
+## [2026-05-13 ~23:09 TST] — Add Retired faculty section with Chao-Chen Lin
+
+**Prompt summary:**
+> 「針對 index.html 的頁面，在 faculty 下的 Jointly Appointed 與 In Remembrance 之間新增 Retired，底下有 Chao-Chen Lin（林照真），Professor，tag 有 Visual Journalism, Investigative Journalism, In-depth Reporting」
+
+**Actions taken:**
+- Added "Retired" tab button between Jointly Appointed and In Remembrance in `index.html`.
+- Added sidebar nav link for Retired section.
+- Added `<div id="faculty-retired" class="faculty-tab-panel">` panel with Chao-Chen Lin card.
+- Added `retired` group to JavaScript tabs map.
+- Added Chao-Chen Lin entry to `data/faculty.json` under new "retired" group.
+
+**Files modified:** `index.html`, `data/faculty.json`
+
+---
+
+## [2026-05-13 ~23:13 TST] — Update Hui-Ju Tsai header contact link text
+
+**Prompt summary:**
+> 「hui-ju-tsai.html 的 profile-header 下的第三個 profile-contact-item，請將文字從「Personal Website」改為「tintincai.wixsite.com/hjtsai」」
+
+**Actions taken:**
+- Updated `contacts[2].text` in `data/faculty/hui-ju-tsai.json` (already done in earlier session; confirmed correct value).
+
+**Files modified:** `data/faculty/hui-ju-tsai.json`
+
+---
+
+## [2026-05-13 ~23:15 TST] — Match News title font size to Introduction body text; remove acceptance rate stat
+
+**Prompt summary:**
+> 「幫我把 News 標題改成和 Introduction 內文一樣大」
+> 「請把 Introduction 下的 intro-stats 的第二個 stat（<5% acceptance rate）刪掉」
+
+**Actions taken:**
+- Changed `.news-title { font-size }` to `1.125rem` in `css/style.css` (matching body text size).
+- Removed the `<5% Acceptance Rate` stat block from `index.html`.
+
+**Files modified:** `css/style.css`, `index.html`
+
+---
+
+## [2026-05-13 ~23:29 TST] — Hide news-excerpt at ≤600px
+
+**Prompt summary:**
+> 「當畫面 ≤600px，請把 News-card 的 news-excerpt 隱藏」
+
+**Actions taken:**
+- Added `.news-excerpt { display: none; }` inside `@media (max-width: 600px)` in `css/style.css`.
+
+**Files modified:** `css/style.css`
+
+---
+
+## [2026-05-13 ~23:34 TST] — Responsive faculty grid fixes (faculty-compact-grid → faculty-grid at ≤960px)
+
+**Prompt summary:**
+> 「Faculty compact grid 改單欄，請在 ≤1200px 便執行」（initial request, later corrected）
+> 「當畫面 ≤1200px 時，應該是要改 faculty-grid 吧？」
+> 「faculty-compact-grid 出現在哪？」
+> 「那請刪掉 faculty-compact-grid，另外，faculty-grid → 單欄 改為 ≤960px」
+
+**Actions taken:**
+- Confirmed `faculty-compact-grid` is not used anywhere in HTML or JS.
+- Removed all `faculty-compact-grid` CSS rules from `css/style.css`.
+- Added `.faculty-grid { grid-template-columns: 1fr; }` inside `@media (max-width: 960px)`.
+
+**Files modified:** `css/style.css`
+
+---
+
+## [2026-05-14 ~00:11 TST] — Shorten faculty tags for display
+
+**Prompt summary:**
+> 「請幫我修改 faculty 的 tag：1. Tai-Li Wang 刪除 Video Journalism 2. Chen-Ling Hung 的「Globalization and Communication」改為「Globalization」，「Political Economy of Communication」改為「Political Economy」 3. Lokman Tsui 的「Freedom of Speech and Society」改為「Freedom of Speech」 4. Chao-Chen Lin 刪除 In-depth Reporting」
+
+**Actions taken:**
+- Updated `data/faculty.json`: Tai-Li Wang → [Media Psychology, Political Communication]; Chen-Ling Hung → [Communication Laws, Globalization, Political Economy]; Lokman Tsui → [Information Sociologies, Freedom of Speech, Digital Security]; Chao-Chen Lin → [Visual Journalism, Investigative Journalism].
+
+**Files modified:** `data/faculty.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
