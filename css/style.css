@@ -1221,13 +1221,30 @@ footer { background: var(--maroon-dark); }
   .profile-sidebar { display: none; }
   .profile-meta-inner { grid-template-columns: 1fr; }
   .faculty-compact-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* News: stack meta (tag + date) above content (title + excerpt) */
+  .news-card {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+  .news-meta {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  /* Faculty tabs: smaller buttons and labels */
+  .faculty-tab-btn {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+  }
 }
 
 @media (max-width: 720px) {
   .sidebar-nav-link { padding: 0.65rem 0.75rem; font-size: 0.82rem; }
   .faculty-grid { grid-template-columns: 1fr; }
   .faculty-photo-wrap { width: 90px; }
-  .news-card { grid-template-columns: 110px 1fr; gap: 1rem; }
+  .news-card { gap: 0.4rem; }
   .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
   .profile-header-inner { grid-template-columns: 1fr; }
