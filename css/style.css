@@ -538,7 +538,7 @@ section { padding: 5rem 15% 10rem; }
 .news-tag.tag-forum  { background: #5a4280; }
 
 .news-title {
-  font-size: 0.97rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: var(--text-900);
   line-height: 1.5;
