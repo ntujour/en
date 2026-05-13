@@ -1,0 +1,79 @@
+{
+  "slug": "lih-yun-lin",
+  "name": "Lih-Yun Lin",
+  "nameZh": "林麗雲",
+  "title": "Professor",
+  "photo": "../image/Lih-Yun%20Lin.jpg",
+  "placeholder": "",
+  "contacts": [
+    { "type": "email", "value": "lihyunlin2@gmail.com" }
+  ],
+  "sections": [
+    {
+      "heading": "Education",
+      "type": "list",
+      "items": [
+        "Ph.D. in Communication, University of Westminster, UK",
+        "M.A. in Journalism, National Chengchi University (NCCU), Taiwan"
+      ]
+    },
+    {
+      "heading": "Research Areas",
+      "type": "text",
+      "content": "Prof. Lin's scholarship centers on the political economy of media, with particular attention to Taiwan's media industry history, public service broadcasting, and the dynamics of press freedom in East Asian contexts. Her work applies critical discourse analysis and qualitative research methodologies to examine media regulation, television systems, and the relationship between media capital and democratic governance."
+    },
+    {
+      "heading": "Courses Taught",
+      "type": "list",
+      "items": [
+        "History of News",
+        "Media Sociology",
+        "Communication Theories"
+      ]
+    },
+    {
+      "heading": "Professional Experience",
+      "type": "list",
+      "items": [
+        "Commissioner, National Communications Commission, Taiwan (2020–2024)",
+        "Director, Graduate Institute of Journalism, NTU (2009–2012)",
+        "Assistant Professor, Fu Jen Catholic University (1998–2005)",
+        "Reporter, China Times (1990)"
+      ]
+    },
+    {
+      "heading": "Selected Publications",
+      "type": "list",
+      "items": [
+        "Over 25 peer-reviewed journal articles on media regulation, television systems, and press freedom in Taiwan and comparative contexts",
+        "Research on television news channel regulation and media capital in Taiwan",
+        "Numerous book chapters in edited volumes on communication policy and public service media"
+      ]
+    },
+    {
+      "heading": "Honors &amp; Awards",
+      "type": "list",
+      "items": [
+        "Distinguished Teaching Award, National Taiwan University (2017)",
+        "Tseng Hsu-pai Journalism Award (2006)",
+        "Multiple NTU Teaching Excellence Awards"
+      ]
+    }
+  ],
+  "sidebar": {
+    "teachingField": [],
+    "researchInterests": [
+      "Cultural Political Economy",
+      "Critical Discourse Analysis",
+      "Media History",
+      "Public Service Media",
+      "Press Freedom",
+      "Broadcasting Policy",
+      "Media Regulation"
+    ],
+    "contact": {
+      "email": "lihyunlin2@gmail.com"
+    },
+    "externalLinks": []
+  }
+}

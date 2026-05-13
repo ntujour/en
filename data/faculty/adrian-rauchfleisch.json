@@ -1,0 +1,63 @@
+{
+  "slug": "adrian-rauchfleisch",
+  "name": "Adrian Rauchfleisch",
+  "nameZh": "",
+  "title": "Professor",
+  "photo": "../image/Adrian%20Rauchfleisch.png",
+  "placeholder": "AR",
+  "contacts": [
+    { "type": "phone", "value": "(02) 3366-3123" },
+    { "type": "email", "value": "adrian.rauchfleisch@gmail.com" },
+    { "type": "web", "text": "arauchfleisch.ch", "url": "http://www.arauchfleisch.ch/" }
+  ],
+  "sections": [
+    {
+      "heading": "Education",
+      "type": "list",
+      "items": [
+        "Ph.D., University of Zurich, Switzerland",
+        "M.A., University of Zurich, Switzerland"
+      ]
+    },
+    {
+      "heading": "Research Areas",
+      "type": "text",
+      "content": "Prof. Rauchfleisch is an internationally recognized scholar in computational communication and political communication. His research examines social media dynamics, journalism studies, disinformation, and social network analysis — with a particular focus on Taiwan's digital public sphere and cross-national comparative studies. He employs large-scale computational methods to study online political discourse, information flows, and media ecosystems."
+    },
+    {
+      "heading": "Courses Taught",
+      "type": "list",
+      "items": [
+        "Social Media and Social Network Analysis",
+        "Networked Journalism"
+      ]
+    },
+    {
+      "heading": "Selected Publications",
+      "type": "list",
+      "items": [
+        "Over 30 peer-reviewed journal articles (2013–present) spanning disinformation, COVID-19 discourse, climate change activism, and social media analysis",
+        "Research on disinformation dynamics in Taiwan's political communication environment",
+        "Publications in top communication journals on computational methods and political discourse online"
+      ]
+    }
+  ],
+  "sidebar": {
+    "teachingField": [],
+    "researchInterests": [
+      "Political Communication",
+      "Social Media",
+      "Disinformation",
+      "Social Network Analysis",
+      "Computational Methods",
+      "Journalism Studies",
+      "Online Discourse"
+    ],
+    "contact": {
+      "email": "adrian.rauchfleisch@gmail.com"
+    },
+    "externalLinks": [
+      { "text": "Personal Website", "url": "http://www.arauchfleisch.ch/" }
+    ]
+  }
+}

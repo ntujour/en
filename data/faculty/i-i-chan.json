@@ -1,0 +1,67 @@
+{
+  "slug": "i-i-chan",
+  "name": "I-I Chan",
+  "nameZh": "詹怡宜",
+  "title": "Associate Professor",
+  "photo": "../image/I-I%20Chan.png",
+  "placeholder": "",
+  "contacts": [
+    { "type": "email", "value": "chanii311@ntu.edu.tw" }
+  ],
+  "sections": [
+    {
+      "heading": "Education",
+      "type": "list",
+      "items": [
+        "Master of Public Policy (MPP), University of Chicago, USA",
+        "B.A. in Political Science (Public Administration Division), National Taiwan University"
+      ]
+    },
+    {
+      "heading": "Professional Background",
+      "type": "text",
+      "content": "Prof. Chan brings more than three decades of frontline television journalism experience to the classroom. Before joining NTU in 2025, she held senior leadership roles at TVBS — one of Taiwan's leading cable news networks — most recently as Deputy General Manager of the News Department. Her career spans editorial direction, documentary production, and public affairs reporting, making her one of Taiwan's most accomplished broadcast journalists."
+    },
+    {
+      "heading": "Selected Professional Experience",
+      "type": "list",
+      "items": [
+        "Deputy General Manager, TVBS News Department (2020–2025)",
+        "Producer and Host, <em>Step by Step: Discovering New Taiwan</em>, TVBS (2004–2025)",
+        "Director and Senior Editor, TVBS News (various roles, 1993–2020)"
+      ]
+    },
+    {
+      "heading": "Courses Taught",
+      "type": "list",
+      "items": [
+        "Television News Reporting (I) &amp; (II)",
+        "Government and Public Affairs Reporting",
+        "Current Affairs Forum: Planning and Production"
+      ]
+    },
+    {
+      "heading": "Honors &amp; Awards",
+      "type": "list",
+      "items": [
+        "Eisenhower Fellow (2016)",
+        "Golden Bell Award — multiple years (2000–2009)",
+        "Distinguished Award for Excellence in Communication Management (2015)"
+      ]
+    }
+  ],
+  "sidebar": {
+    "teachingField": [
+      "TV Journalism",
+      "News Production",
+      "Public Affairs Reporting",
+      "Current Affairs",
+      "Broadcast News"
+    ],
+    "researchInterests": [],
+    "contact": {
+      "email": "chanii311@ntu.edu.tw"
+    },
+    "externalLinks": []
+  }
+}

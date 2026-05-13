@@ -9,22 +9,13 @@
 </head>
 <body>
 
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a href="../index.html" class="topbar-brand">
-        <div class="topbar-logo">
-          <span class="topbar-logo-ntu">NTU</span>
-          <div class="topbar-logo-line"></div>
-          <span class="topbar-logo-sub">臺灣大學</span>
-        </div>
-        <div class="topbar-text">
-          <span class="topbar-dept">Graduate Institute of Journalism</span>
-          <span class="topbar-univ">National Taiwan University</span>
-        </div>
-      </a>
-      <div class="topbar-right">
-        <div class="topbar-lang">
-            <div class="site-header-icons">
+  <!-- SITE HEADER -->
+  <header class="site-header" role="banner">
+    <a href="../index.html" class="site-header-brand">
+      <span class="site-header-title">Graduate Institute of Journalism, NTU</span>
+      <span class="site-header-sub">國立臺灣大學新聞研究所</span>
+    </a>
+    <div class="site-header-icons">
       <a href="https://www.facebook.com/ntujour/?locale=zh_TW" target="_blank" rel="noopener" class="site-header-icon" aria-label="Facebook">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
       </a>
@@ -35,123 +26,22 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
       </a>
     </div>
-        <a href="https://ntujour.github.io/" target="_blank" rel="noopener" class="site-header-lang">中文</a>
-        </div>
-      </div>
-    </div>
+    <a href="https://ntujour.github.io/" target="_blank" rel="noopener" class="site-header-lang">中文</a>
   </header>
 
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="../index.html#introduction" class="nav-link">Introduction</a>
-      <a href="../index.html#news" class="nav-link">News</a>
-      <a href="../index.html#faculty" class="nav-link active">Faculty</a>
-    </div>
-  </nav>
-
-  <div class="profile-breadcrumb">
-    <div class="profile-breadcrumb-inner">
-      <a href="../index.html">Home</a>
-      <span class="breadcrumb-sep">/</span>
-      <a href="../index.html#faculty">Faculty</a>
-      <span class="breadcrumb-sep">/</span>
-      <span>Chen-Ling Hung</span>
-    </div>
-  </div>
-
+  <!-- PROFILE HEADER -->
   <div class="profile-header">
-    <div class="profile-header-inner">
-      <div class="profile-photo-wrap">
-        <img
-          class="profile-photo-large"
-          src="../image/Chen-Ling%20Hung.jpg"
-          alt="Chen-Ling Hung"
-        >
-        <div class="profile-placeholder-large" style="display:none;">洪</div>
-      </div>
-      <div>
-        <p class="profile-dept">Graduate Institute of Journalism · NTU</p>
-        <h1 class="profile-name">Chen-Ling Hung <span style="font-size:1.2rem;font-weight:400;opacity:0.7;">(洪貞玲)</span></h1>
-        <p class="profile-title-text">Professor</p>
-        <div class="profile-contacts">
-          <span class="profile-contact-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.09 6.09l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            (02) 3366-3124
-          </span>
-          <span class="profile-contact-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:clhung@ntu.edu.tw">clhung@ntu.edu.tw</a>
-          </span>
-        </div>
-      </div>
-    </div>
+    <div class="profile-header-inner" id="profile-header-inner"></div>
   </div>
 
+  <!-- PROFILE META: Teaching Field + Research Interests -->
+  <div class="profile-meta" id="profile-meta"></div>
+
+  <!-- PROFILE BODY -->
   <div class="profile-body">
     <div class="profile-body-inner">
-      <div class="profile-main">
-
-        <div class="profile-section">
-          <h2>Education</h2>
-          <ul>
-            <li>Ph.D. in Mass Communications, Pennsylvania State University, USA (2004)</li>
-            <li>M.A. in Journalism, National Chengchi University, Taiwan (1996)</li>
-            <li>Bachelor of Laws, National Taiwan University, Taiwan (1993)</li>
-          </ul>
-        </div>
-
-        <div class="profile-section">
-          <h2>Research Areas</h2>
-          <p>Prof. Hung's research focuses on the intersection of law, policy, and communication. Her scholarship examines communication laws, broadcasting regulation, digital divide issues, and the political economy of communication in Taiwan and comparative international contexts. She brings a unique interdisciplinary perspective combining legal training with communication scholarship.</p>
-        </div>
-
-        <div class="profile-section">
-          <h2>Courses Taught</h2>
-          <ul>
-            <li>News and Law</li>
-            <li>Globalization and Communications</li>
-            <li>Information Communication and Policies</li>
-            <li>Political Economy of Communication</li>
-          </ul>
-        </div>
-
-        <div class="profile-section">
-          <h2>Selected Publications</h2>
-          <ul>
-            <li>Over 17 peer-reviewed journal articles on citizen journalism, media regulation, indigenous digital archives, and telecommunications policy</li>
-            <li>6 book chapters on communication law and broadcasting policy</li>
-            <li>24 conference papers at international venues including IAMCR annual meetings</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="profile-sidebar">
-                <div class="sidebar-card">
-          <h3>Teaching Field</h3>
-          <div>
-          </div>
-        </div>
-        <div class="sidebar-card">
-          <h3>Research Interests</h3>
-          <div>
-            <span class="research-pill">Communication Law</span>
-            <span class="research-pill">Broadcasting Policy</span>
-            <span class="research-pill">Digital Divide</span>
-            <span class="research-pill">Political Economy</span>
-            <span class="research-pill">Citizen Journalism</span>
-            <span class="research-pill">Media Regulation</span>
-            <span class="research-pill">Telecommunications</span>
-          </div>
-        </div>
-        <div class="sidebar-card">
-          <h3>Contact</h3>
-          <a href="mailto:clhung@ntu.edu.tw" style="margin-top:0.5rem;">clhung@ntu.edu.tw</a>
-        </div>
-        <div class="sidebar-card">
-          <h3>External Links</h3>
-        </div>
-      </div>
+      <div class="profile-main" id="profile-main"></div>
+      <div class="profile-sidebar" id="profile-sidebar"></div>
     </div>
   </div>
 
@@ -180,5 +70,7 @@
     </div>
   </footer>
 
+  <script>const SLUG = 'chen-ling-hung';</script>
+  <script src="../js/faculty-profile.js"></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+{
+  "slug": "hui-ju-tsai",
+  "name": "Hui-Ju Tsai",
+  "nameZh": "蔡蕙如",
+  "title": "Associate Professor",
+  "photo": "../image/Hui-Ju%20Tsai.jpg",
+  "placeholder": "蔡",
+  "contacts": [
+    { "type": "phone", "value": "(02) 3366-3121" },
+    { "type": "email", "value": "tsaihuiju@ntu.edu.tw" },
+    { "type": "web", "text": "Personal Website", "url": "https://tintincai.wixsite.com/hjtsai" }
+  ],
+  "sections": [
+    {
+      "heading": "Education",
+      "type": "list",
+      "items": [
+        "Ph.D. in Mass Communication, Loughborough University, UK (2018)",
+        "M.A. in Journalism, National Taiwan University, Taiwan (2008)"
+      ]
+    },
+    {
+      "heading": "Research Areas",
+      "type": "text",
+      "content": "Dr. Tsai's research sits at the intersection of media sociology, cultural studies, and digital media. Her work investigates new media and civic engagement, the platformisation of communication in everyday life, public service media, and the democratisation of mass culture. She brings critical and qualitative perspectives to understanding how digital platforms reshape public participation and cultural production in contemporary Taiwan."
+    },
+    {
+      "heading": "Courses Taught",
+      "type": "list",
+      "items": [
+        "Advanced Research Methods in Social Sciences (Doctoral)",
+        "Cultural &amp; Creative Industries",
+        "New Media &amp; Social Initiative",
+        "Communication Theories",
+        "News Writing and Editing",
+        "Science and Technology Communication",
+        "Visual Culture Analysis"
+      ]
+    },
+    {
+      "heading": "Selected Publications",
+      "type": "list",
+      "items": [
+        "Articles in <em>New Media &amp; Society</em> on platformisation and civic life",
+        "Book chapters in Routledge publications on cultural policy and media studies",
+        "Research on public service media and democratic culture in Taiwan"
+      ]
+    }
+  ],
+  "sidebar": {
+    "teachingField": [],
+    "researchInterests": [
+      "New Media",
+      "Civic Engagement",
+      "Platformisation",
+      "Public Service Media",
+      "Cultural Studies",
+      "Media Sociology",
+      "Visual Culture"
+    ],
+    "contact": {
+      "email": "tsaihuiju@ntu.edu.tw"
+    },
+    "externalLinks": [
+      { "text": "Personal Website", "url": "https://tintincai.wixsite.com/hjtsai" }
+    ]
+  }
+}

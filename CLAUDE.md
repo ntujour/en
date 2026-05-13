@@ -15,10 +15,20 @@ English source content: `https://webpageprodvm.ntu.edu.tw/Journalism/Default.asp
 ```
 index.html              Main single-page site
 css/style.css           All styles
+js/
+  faculty-profile.js    Shared AJAX renderer for faculty profile pages
 data/
-  faculty.json          Faculty data for all six tabs
+  faculty.json          Faculty grid data (used by index.html)
   news.json             News items list
-faculty/                Individual full-time faculty profile pages
+  faculty/              One JSON file per full-time faculty member
+    ji-lung-hsieh.json
+    lih-yun-lin.json
+    chen-ling-hung.json
+    adrian-rauchfleisch.json
+    hui-ju-tsai.json
+    i-i-chan.json
+    lokman-tsui.json
+faculty/                Individual full-time faculty profile pages (thin HTML shells)
   adrian-rauchfleisch.html
   chen-ling-hung.html
   hui-ju-tsai.html
@@ -27,6 +37,7 @@ faculty/                Individual full-time faculty profile pages
   lih-yun-lin.html
   lokman-tsui.html
 image/                  Faculty photos and other images
+  banner/               Gallery images (1.jpg – 4.jpg)
 LOG.md                  Prompt-by-prompt change log
 CLAUDE.md               This file
 .claude/worktrees/      Claude Code worktrees (not deployed)
@@ -125,6 +136,80 @@ Body font: Georgia (serif). UI font: -apple-system (sans-serif).
   "remembrance": [ … ]      // cards get grey top border + reduced opacity
 }
 ```
+
+## Workflow: Adding or Editing Faculty Profile Content
+
+Faculty profile data is stored in `data/faculty/<slug>.json`.  
+The HTML at `faculty/<slug>.html` is a **thin shell** — it loads `js/faculty-profile.js` which fetches the JSON and renders everything.
+
+### Faculty slugs
+
+| Name | Slug |
+|------|------|
+| Ji-Lung Hsieh (謝吉隆) | `ji-lung-hsieh` |
+| Lih-Yun Lin (林麗雲) | `lih-yun-lin` |
+| Chen-Ling Hung (洪貞玲) | `chen-ling-hung` |
+| Adrian Rauchfleisch | `adrian-rauchfleisch` |
+| Hui-Ju Tsai (蔡蕙如) | `hui-ju-tsai` |
+| I-I Chan (詹怡宜) | `i-i-chan` |
+| Lokman Tsui (徐洛文) | `lokman-tsui` |
+
+### JSON schema — `data/faculty/<slug>.json`
+
+```json
+{
+  "slug": "faculty-name",
+  "name": "Full English Name",
+  "nameZh": "中文名",
+  "title": "Professor / Associate Professor / Assistant Professor",
+  "photo": "../image/Photo%20File.jpg",
+  "placeholder": "字",
+  "contacts": [
+    { "type": "phone", "value": "(02) XXXX-XXXX" },
+    { "type": "email", "value": "email@ntu.edu.tw" },
+    { "type": "web",   "text": "Link Label", "url": "https://..." }
+  ],
+  "sections": [
+    {
+      "heading": "Section Title",
+      "type": "list",
+      "items": ["Plain text or HTML — <em>italic</em> and &amp; supported"]
+    },
+    {
+      "heading": "Research Areas",
+      "type": "text",
+      "content": "Single prose paragraph."
+    }
+  ],
+  "sidebar": {
+    "teachingField":     ["Course Name"],
+    "researchInterests": ["Topic"],
+    "contact": { "phone": "(02) XXXX-XXXX", "email": "email@ntu.edu.tw" },
+    "externalLinks": [{ "text": "Label", "url": "https://..." }]
+  }
+}
+```
+
+**Notes:**
+- `nameZh` / `placeholder` — omit or set `""` if not applicable
+- `contacts` types: `"phone"` · `"email"` · `"web"`
+- `sections[].type`: `"list"` for bullet items, `"text"` for a prose paragraph
+- List `items` are injected as `innerHTML` — `<em>`, `&amp;`, `&nbsp;` etc. are rendered
+
+### Step-by-step: update a faculty profile
+
+> Trigger: user says "在 [Name] 的 [Section] 新增 / 修改..."
+
+1. **Edit `data/faculty/<slug>.json`** — add or update the relevant field
+2. **Open preview** — start a local server and open the faculty page in browser:
+   ```bash
+   cd /Users/hebe/Desktop/web/ntujour-en.github.io
+   python3 -m http.server 8080 &
+   open "http://localhost:8080/faculty/<slug>.html"
+   ```
+   Or use the Chrome MCP: `mcp__Claude_in_Chrome__navigate` → `http://localhost:8080/faculty/<slug>.html`
+
+---
 
 ## Workflow: Adding or Editing a News Item
 

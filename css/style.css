@@ -269,7 +269,7 @@ img { max-width: 100%; display: block; }
 }
 
 .container-1200 {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -809,7 +809,7 @@ footer { background: var(--maroon-dark); }
 }
 
 .profile-breadcrumb-inner {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   height: 44px;
   display: flex;
@@ -825,13 +825,13 @@ footer { background: var(--maroon-dark); }
 .breadcrumb-sep { opacity: 0.4; }
 
 .profile-header {
-  background: linear-gradient(140deg, var(--maroon-dark) 0%, var(--maroon) 100%);
+  background: var(--maroon);
   color: white;
-  padding: 3.5rem 1rem;
+  padding: 3.5rem 1rem 3rem;
 }
 
 .profile-header-inner {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -843,7 +843,7 @@ footer { background: var(--maroon-dark); }
   width: 160px; height: 200px;
   border-radius: 6px;
   overflow: hidden;
-  border: 3px solid rgba(255,255,255,0.25);
+  border: 2px solid rgba(255,255,255,0.25);
   flex-shrink: 0;
   background: rgba(255,255,255,0.1);
 }
@@ -862,7 +862,7 @@ footer { background: var(--maroon-dark); }
   font-family: Georgia, serif;
   font-size: 3rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.4);
+  color: var(--text-300);
 }
 
 .profile-dept {
@@ -879,6 +879,7 @@ footer { background: var(--maroon-dark); }
   font-weight: 700;
   line-height: 1.15;
   margin-bottom: 0.4rem;
+  color: white;
 }
 
 .profile-title-text {
@@ -903,21 +904,54 @@ footer { background: var(--maroon-dark); }
   gap: 0.4rem;
 }
 
-.profile-contact-item a { color: rgba(255,255,255,0.85); text-decoration: none; }
+.profile-contact-item a { color: rgba(255,255,255,0.9); text-decoration: none; }
 .profile-contact-item a:hover { color: white; text-decoration: underline; }
 
-.profile-body { background: var(--bg); padding: 3.5rem 1rem; }
-
-.profile-body-inner {
-  max-width: 1200px;
+/* Profile meta strip — Teaching Field + Research Interests */
+.profile-meta {
+  background: white;
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+.profile-meta-inner {
+  max-width: 960px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 3rem;
+  padding: 2rem 0;
+}
+.profile-meta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.profile-meta-label {
+  font-family: -apple-system, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-500);
+}
+.profile-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.profile-body { background: var(--bg); padding: 4rem 1rem; }
+
+.profile-body-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 5rem;
   align-items: start;
 }
 
-.profile-section { margin-bottom: 2.5rem; }
+.profile-section { margin-bottom: 3.5rem; }
 
 .profile-section h2 {
   font-family: -apple-system, sans-serif;
@@ -1182,6 +1216,7 @@ footer { background: var(--maroon-dark); }
   .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
   .profile-body-inner { grid-template-columns: 1fr; }
   .profile-sidebar { position: static; }
+  .profile-meta-inner { grid-template-columns: 1fr; }
   .faculty-compact-grid { grid-template-columns: repeat(2, 1fr); }
 }
 

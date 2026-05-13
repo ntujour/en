@@ -1,0 +1,63 @@
+{
+  "slug": "chen-ling-hung",
+  "name": "Chen-Ling Hung",
+  "nameZh": "洪貞玲",
+  "title": "Professor",
+  "photo": "../image/Chen-Ling%20Hung.jpg",
+  "placeholder": "洪",
+  "contacts": [
+    { "type": "phone", "value": "(02) 3366-3124" },
+    { "type": "email", "value": "clhung@ntu.edu.tw" }
+  ],
+  "sections": [
+    {
+      "heading": "Education",
+      "type": "list",
+      "items": [
+        "Ph.D. in Mass Communications, Pennsylvania State University, USA (2004)",
+        "M.A. in Journalism, National Chengchi University, Taiwan (1996)",
+        "Bachelor of Laws, National Taiwan University, Taiwan (1993)"
+      ]
+    },
+    {
+      "heading": "Research Areas",
+      "type": "text",
+      "content": "Prof. Hung's research focuses on the intersection of law, policy, and communication. Her scholarship examines communication laws, broadcasting regulation, digital divide issues, and the political economy of communication in Taiwan and comparative international contexts. She brings a unique interdisciplinary perspective combining legal training with communication scholarship."
+    },
+    {
+      "heading": "Courses Taught",
+      "type": "list",
+      "items": [
+        "News and Law",
+        "Globalization and Communications",
+        "Information Communication and Policies",
+        "Political Economy of Communication"
+      ]
+    },
+    {
+      "heading": "Selected Publications",
+      "type": "list",
+      "items": [
+        "Over 17 peer-reviewed journal articles on citizen journalism, media regulation, indigenous digital archives, and telecommunications policy",
+        "6 book chapters on communication law and broadcasting policy",
+        "24 conference papers at international venues including IAMCR annual meetings"
+      ]
+    }
+  ],
+  "sidebar": {
+    "teachingField": [],
+    "researchInterests": [
+      "Communication Law",
+      "Broadcasting Policy",
+      "Digital Divide",
+      "Political Economy",
+      "Citizen Journalism",
+      "Media Regulation",
+      "Telecommunications"
+    ],
+    "contact": {
+      "email": "clhung@ntu.edu.tw"
+    },
+    "externalLinks": []
+  }
+}

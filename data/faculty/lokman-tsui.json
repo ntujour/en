@@ -1,0 +1,65 @@
+{
+  "slug": "lokman-tsui",
+  "name": "Lokman Tsui",
+  "nameZh": "徐洛文",
+  "title": "Assistant Professor",
+  "photo": "../image/Lokman%20Tsui.jpg",
+  "placeholder": "徐",
+  "contacts": [
+    { "type": "email", "value": "lokmantsui@ntu.edu.tw" },
+    { "type": "web", "text": "lokman.org", "url": "https://www.lokman.org" }
+  ],
+  "sections": [
+    {
+      "heading": "Education",
+      "type": "list",
+      "items": [
+        "Ph.D. in Communication, Annenberg School for Communication, University of Pennsylvania (2010)",
+        "Certificate of Study in Law, Penn Law School, University of Pennsylvania (2008)",
+        "Certificate in Comparative Media Law &amp; Policy, University of Oxford (2004)",
+        "M.A. in China Studies, University of Leiden (2001)",
+        "B.A. in China Studies, University of Leiden (2001)"
+      ]
+    },
+    {
+      "heading": "Research Areas",
+      "type": "text",
+      "content": "Dr. Tsui is a leading scholar on internet freedom, digital rights, and authoritarian information control. His research examines internet censorship, digital security, press freedom, and the dynamics of authoritarianism in the digital age — with a particular focus on China, Hong Kong, and broader Asia-Pacific contexts. He has collaborated with The Citizen Lab at the University of Toronto and brings both legal and communication perspectives to his interdisciplinary work."
+    },
+    {
+      "heading": "Courses Taught",
+      "type": "list",
+      "items": [
+        "Freedom of Speech and Society",
+        "Information Technologies and Information Sociologies"
+      ]
+    },
+    {
+      "heading": "Selected Publications",
+      "type": "list",
+      "items": [
+        "Over 26 journal articles and book chapters in <em>Journalism</em>, <em>Chinese Journal of Communication</em>, and <em>Digital Journalism</em>",
+        "Co-editor, <em>The Hyperlinked Society</em> (University of Michigan Press, 2008)",
+        "Research published through The Citizen Lab, University of Toronto, on internet censorship and digital security"
+      ]
+    }
+  ],
+  "sidebar": {
+    "teachingField": [],
+    "researchInterests": [
+      "Press Freedom",
+      "Internet Censorship",
+      "Digital Security",
+      "Authoritarianism",
+      "Digital Rights",
+      "China &amp; Hong Kong",
+      "Communication Law"
+    ],
+    "contact": {
+      "email": "lokmantsui@ntu.edu.tw"
+    },
+    "externalLinks": [
+      { "text": "Personal Website", "url": "https://www.lokman.org" }
+    ]
+  }
+}
