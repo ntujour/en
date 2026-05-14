@@ -571,6 +571,21 @@
 
 ---
 
+## [2026-05-14 ~01:20 TST] — Rebuild Curriculum section with track tabs and course lists
+
+**Prompt summary:**
+> 「Curriculum 區塊，請幫我先增加一段內文，內文後要有 Professional Track 和 Research Track 兩個區塊按鈕（要易讀美觀），最後還有一個小內文區塊」
+
+**Actions taken:**
+- Replaced curriculum-body content in `index.html` with: 2 intro paragraphs, `.track-tabs` with Professional/Research tab buttons and panels, and a `.curriculum-footer-note` link.
+- Each track panel contains 3 course groups (Required, Elective Required, Elective Courses) with counts and a numbered notes list.
+- Added JS tab switching logic for `.track-tab-btn` / `.track-panel`.
+- Rewrote curriculum CSS in `css/style.css`: removed old grid layout, added `.track-tabs`, `.track-tab-bar`, `.track-tab-btn`, `.track-panel`, `.course-group`, `.course-group-label`, `.course-group-note`, `.course-list`, `.track-notes`, `.curriculum-footer-note`.
+
+**Files modified:** `index.html`, `css/style.css`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title

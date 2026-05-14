@@ -226,28 +226,88 @@
       </div>
       <div class="curriculum-body">
         <div class="curriculum-text">
-          <p>The Graduate Institute of Journalism offers a flexible two-year master's program designed to develop both theoretical rigor and professional skills. Students may choose to specialize in digital journalism, media studies, or pursue an interdisciplinary track drawing from NTU's broader academic community.</p>
-          <p>The curriculum is structured around three pillars: <strong>Core Journalism Courses</strong>, which build foundational reporting, writing, and editing skills; <strong>Research Methods</strong>, which equip students with quantitative and qualitative tools for academic inquiry; and <strong>Elective Seminars</strong>, which allow students to pursue topics ranging from political communication and media law to data journalism and cross-media storytelling.</p>
-          <p>The <strong>Digital Journalism Specialization Program</strong> offers additional training in web production, social media analysis, data visualization, and computational methods. Students in this track complete a capstone project combining journalistic craft with technical innovation.</p>
+          <p>The graduation credit requirement for the Institute is 33 credits. We offer two graduation tracks: Professional and Research. Students in both tracks are required to take courses related to journalism practice, reflecting the institute's emphasis on practical journalism skills.</p>
+          <p>Students are required to select courses offered by this Institute as a priority. If enrollment in Master's-level courses outside the Institute is necessary due to thesis research needs or special circumstances, approval from the Institute Director is required before credits can be counted toward graduation.</p>
         </div>
-        <div class="curriculum-tracks">
-          <div class="curriculum-track">
-            <h4>General Journalism Track</h4>
-            <p>The core graduate journalism program covering reporting, editing, media theory, and research methods. Open to all incoming students.</p>
+
+        <div class="track-tabs">
+          <div class="track-tab-bar">
+            <button class="track-tab-btn active" data-track="professional">Professional Track</button>
+            <button class="track-tab-btn" data-track="research">Research Track</button>
           </div>
-          <div class="curriculum-track">
-            <h4>Digital Journalism Specialization</h4>
-            <p>An advanced track integrating data journalism, web production, and computational analysis. Students complete a digital capstone project.</p>
+
+          <div class="track-panel" id="track-professional">
+            <div class="track-courses">
+              <div class="course-group">
+                <div class="course-group-label">Required Courses</div>
+                <ul class="course-list">
+                  <li>Mass Communication Theory</li>
+                  <li>Media Law and Ethics</li>
+                </ul>
+              </div>
+              <div class="course-group">
+                <div class="course-group-label">Elective Required Courses <span class="course-group-note">Choose 1 out of 2</span></div>
+                <ul class="course-list">
+                  <li>Communication Research Methods</li>
+                  <li>Quantitative Research</li>
+                </ul>
+              </div>
+              <div class="course-group">
+                <div class="course-group-label">Elective Courses <span class="course-group-note">Choose 3 out of 5</span></div>
+                <ul class="course-list">
+                  <li>Reporting and Writing I</li>
+                  <li>Television News Reporting I</li>
+                  <li>News Editing and Information Design</li>
+                  <li>Reporting and Writing II</li>
+                  <li>Television News Reporting II</li>
+                </ul>
+              </div>
+            </div>
+            <ol class="track-notes">
+              <li>In addition to required and elective courses, students must take at least two courses offered by this Institute.</li>
+              <li>Students writing an in-depth reporting or multimedia in-depth reporting thesis must take Reporting and Writing I and Reporting and Writing II.</li>
+              <li>Students writing a video in-depth reporting thesis must take Television News Reporting I and Television News Reporting II.</li>
+              <li>Students with prior training in Reporting and Writing or Television News Reporting may apply for course exemption by submitting an application, supporting documents, and representative works for review by the course instructor. Supporting documents include: Proof of at least two years of relevant media work experience, or Official transcripts showing completion of at least two related courses (or equivalent).</li>
+            </ol>
           </div>
-          <div class="curriculum-track">
-            <h4>Bachelor of Social Science Pathway</h4>
-            <p>A special track for outstanding NTU undergraduates combining journalism training with social science research coursework.</p>
-          </div>
-          <div class="curriculum-track">
-            <h4>Cross-Campus Electives</h4>
-            <p>Students may draw on the full breadth of NTU's departments — science, medicine, law, and business — to deepen subject expertise.</p>
+
+          <div class="track-panel" id="track-research" hidden>
+            <div class="track-courses">
+              <div class="course-group">
+                <div class="course-group-label">Required Courses</div>
+                <ul class="course-list">
+                  <li>Mass Communication Theory</li>
+                  <li>Media Law and Ethics</li>
+                </ul>
+              </div>
+              <div class="course-group">
+                <div class="course-group-label">Elective Required Courses <span class="course-group-note">Choose 1 out of 2</span></div>
+                <ul class="course-list">
+                  <li>Communication Research Methods</li>
+                  <li>Quantitative Research</li>
+                </ul>
+              </div>
+              <div class="course-group">
+                <div class="course-group-label">Elective Courses <span class="course-group-note">Choose 2 out of 5</span></div>
+                <ul class="course-list">
+                  <li>Reporting and Writing I</li>
+                  <li>Television News Reporting I</li>
+                  <li>News Editing and Information Design</li>
+                  <li>Reporting and Writing II</li>
+                  <li>Television News Reporting II</li>
+                </ul>
+              </div>
+            </div>
+            <ol class="track-notes">
+              <li>In addition to thesis courses, students must complete at least three theory-oriented courses offered by the Institute. These include courses categorized under Theory/Methods, Media and Citizenship, and International Perspectives.</li>
+              <li>Students writing an in-depth reporting or multimedia in-depth reporting thesis must take Reporting and Writing I and Reporting and Writing II.</li>
+              <li>Students writing a video in-depth reporting thesis must take Television News Reporting I and Television News Reporting II.</li>
+              <li>Students with prior training in Reporting and Writing or Television News Reporting may apply for course exemption by submitting an application, supporting documents, and representative works for review by the course instructor. Supporting documents include: Proof of at least two years of relevant media work experience, or Official transcripts showing completion of at least two related courses (or equivalent).</li>
+            </ol>
           </div>
         </div>
+
+        <p class="curriculum-footer-note">For more information, you can search: <a href="https://course.ntu.edu.tw/en/search/dept?d=3420" target="_blank" rel="noopener">https://course.ntu.edu.tw/en/search/dept?d=3420</a></p>
       </div>
     </div>
   </section>
@@ -349,6 +409,17 @@
         activateTab(link.dataset.facultyTab);
         const sec = document.getElementById('faculty');
         if (sec) window.scrollTo({ top: sec.offsetTop - HEADER_H + 1, behavior: 'smooth' });
+      });
+    });
+
+    // ── Curriculum track tab switching ──────────────────────────────────
+    document.querySelectorAll('.track-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.track-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.track-panel').forEach(p => { p.hidden = true; });
+        btn.classList.add('active');
+        const panel = document.getElementById('track-' + btn.dataset.track);
+        if (panel) panel.hidden = false;
       });
     });
 
