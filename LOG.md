@@ -772,6 +772,18 @@
 
 ---
 
+## [2026-05-14 ~04:00 TST] — Lokman Tsui: replace Academic Conferences content with 15 detailed entries
+
+**Prompt summary:**
+> 「刪除 Academic Conferences and Workshops 所有內文，並新增：[15 items]」
+
+**Actions taken:**
+- Replaced all 15 existing items with 15 new detailed entries including paper titles and full conference information.
+
+**Files modified:** `data/faculty/lokman-tsui.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
