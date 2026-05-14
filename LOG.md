@@ -694,6 +694,18 @@
 
 ---
 
+## [2026-05-14 ~03:00 TST] — Lih-Yun Lin: append 2 conference papers at end of list
+
+**Prompt summary:**
+> 「Conference Presentations and Papers 新增在最後：Lin, L. (2001) 和 Lin, L. (1999)」
+
+**Actions taken:**
+- Appended 2 items at the end of Conference Presentations and Papers.
+
+**Files modified:** `data/faculty/lih-yun-lin.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
