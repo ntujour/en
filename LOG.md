@@ -706,6 +706,19 @@
 
 ---
 
+## [2026-05-14 ~03:10 TST] — Update Chen-Ling Hung profile: phone and education
+
+**Prompt summary:**
+> 「1. 電話改成 +886-2-3366-3124 2. Education M.A. 改為 National Cheng-Chi University」
+
+**Actions taken:**
+- contacts[0].value: `(02) 3366-3124` → `+886-2-3366-3124`
+- Education M.A. item: `National Chengchi University` → `National Cheng-Chi University`
+
+**Files modified:** `data/faculty/chen-ling-hung.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
