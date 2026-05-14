@@ -630,6 +630,18 @@
 
 ---
 
+## [2026-05-14 ~02:05 TST] — Update Ji-Lung Hsieh Education: add ", Taiwan" to all three entries
+
+**Prompt summary:**
+> 「Education 內文改為：加上 , Taiwan 在 National Chiao-Tung University 後面」
+
+**Actions taken:**
+- Added ", Taiwan" after "National Chiao-Tung University" in all 3 Education items.
+
+**Files modified:** `data/faculty/ji-lung-hsieh.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
