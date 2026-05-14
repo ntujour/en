@@ -745,6 +745,21 @@
 
 ---
 
+## [2026-05-14 ~03:40 TST] — Update Lokman Tsui profile: education, language, publications, remove research interests
+
+**Prompt summary:**
+> 「1. 刪除 Research Interests 區塊 2. Education 加上國家 3. Language 句號換行 4. 刪除 Journal Articles and Other Publications 全部內文，新增 10 筆」
+
+**Actions taken:**
+- Education: added country names (USA, UK, Netherlands) to all 5 items.
+- Language content: added `<br>` between sentences for line breaks.
+- Journal Articles and Other Publications: replaced all 26 items with 10 new items (journal names in `<em>`).
+- sidebar.researchInterests: set to empty array to remove Research Interests block.
+
+**Files modified:** `data/faculty/lokman-tsui.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
