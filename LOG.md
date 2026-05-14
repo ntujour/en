@@ -682,6 +682,18 @@
 
 ---
 
+## [2026-05-14 ~02:50 TST] — Lih-Yun Lin: add 1 conference paper after 2008 IAMCR Stockholm entry
+
+**Prompt summary:**
+> 「Conference Presentations and Papers 新增在 2008 IAMCR Stockholm 下方：Lin, L. (2007, April 26–27)」
+
+**Actions taken:**
+- Added 1 item after the 2008 IAMCR Stockholm entry.
+
+**Files modified:** `data/faculty/lih-yun-lin.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
