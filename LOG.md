@@ -732,6 +732,19 @@
 
 ---
 
+## [2026-05-14 ~03:30 TST] — Update I-I Chan profile: education and honors
+
+**Prompt summary:**
+> 「1. Education B.A. 加上 , Taiwan 2. Honors and Awards 刪除內容，新增 7 筆詳細獎項」
+
+**Actions taken:**
+- Education: added ", Taiwan" after "National Taiwan University".
+- Honors and Awards: replaced 6 existing items with 7 new detailed entries.
+
+**Files modified:** `data/faculty/i-i-chan.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
