@@ -613,6 +613,23 @@
 
 ---
 
+## [2026-05-14 ~01:55 TST] — Update Ji-Lung Hsieh profile: contacts, journals, conference, awards, services
+
+**Prompt summary:**
+> 「針對 ji-lung-hsieh.html 頁面，幫我做出以下修改：1. 電話改成 +886-2-3366-9867 2. 第三個網頁文字改成 C.C. Lab 3. Journals 全部替換（3 items，斜體期刊名）4. Conference 全部替換（3 items，斜體會議名）5. Honors and Awards 全部替換 6. Professional Services 全部替換」
+
+**Actions taken:**
+- contacts[0].value: `(02) 3366-9867` → `+886-2-3366-9867`
+- contacts[2].text: `C.C.Lab Website` → `C.C. Lab`; externalLinks[0].text: `C.C.Lab` → `C.C. Lab`
+- Replaced all 3 Journals items with new formatted entries (journal names in `<em>`).
+- Replaced all 3 Conference items with new formatted entries (conference names in `<em>`).
+- Honors and Awards: same content, reconfirmed.
+- Professional Services: removed comma after "General".
+
+**Files modified:** `data/faculty/ji-lung-hsieh.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
