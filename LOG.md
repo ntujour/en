@@ -586,6 +586,21 @@
 
 ---
 
+## [2026-05-14 ~01:35 TST] — Curriculum and Introduction styling fixes
+
+**Prompt summary:**
+> 「1. Curriculum 兩個區塊按鈕顏色和風格改成和 faculty 區塊類似 2. 兩個 track 最後的列點字再大一點 3. For more information 字和內文一樣格式 4. Introduction 下的四個 tag 字小一點」
+
+**Actions taken:**
+- Rewrote `.track-tab-btn` / `.track-tab-bar` / `.track-panel` CSS to match faculty tab style: top-rounded borders, active = maroon fill, panel with border.
+- `.track-notes li` font-size: `0.8rem` → `0.88rem`.
+- `.curriculum-footer-note`: removed fixed font-size, set `color: var(--text-600)` and `line-height: 1.75` to match intro body text.
+- `.pillar-btn` font-size: `0.9rem` → `0.78rem`.
+
+**Files modified:** `css/style.css`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
