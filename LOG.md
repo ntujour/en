@@ -796,6 +796,18 @@
 
 ---
 
+## [2026-05-14 ~04:20 TST] — Lokman Tsui: expand Awards and Honors descriptions
+
+**Prompt summary:**
+> 「刪除 Awards and Honors 所有內文，並新增：3 筆含完整描述的獎項」
+
+**Actions taken:**
+- Updated all 3 Awards and Honors items with fuller descriptions (prize subtitle and host institution).
+
+**Files modified:** `data/faculty/lokman-tsui.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
