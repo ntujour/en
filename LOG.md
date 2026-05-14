@@ -601,6 +601,18 @@
 
 ---
 
+## [2026-05-14 ~01:45 TST] — Rename Adrian Rauchfleisch tag
+
+**Prompt summary:**
+> 「Adrian Rauchfleisch faculty-card 的「Methods for Communication Science」改成「Communication Methods」」
+
+**Actions taken:**
+- Updated tag in `data/faculty.json`.
+
+**Files modified:** `data/faculty.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
