@@ -642,6 +642,20 @@
 
 ---
 
+## [2026-05-14 ~02:15 TST] — Update Lih-Yun Lin profile: education, appointments order, book chapters
+
+**Prompt summary:**
+> 「1. Education M.A. 改為 National Cheng-Chi University 2. Professional Appointments 順序顛倒 3. Book Chapters 三處新增共 8 筆條目」
+
+**Actions taken:**
+- Education: "National Chengchi University (NCCU)" → "National Cheng-Chi University".
+- Professional Appointments: reversed order of all 7 items (most recent first).
+- Book Chapters: added 3 items after 2009 Transformation entry; added 2 items after 2004 entry; added 3 items after 2001 Looking back entry.
+
+**Files modified:** `data/faculty/lih-yun-lin.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
