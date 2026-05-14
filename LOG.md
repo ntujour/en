@@ -784,6 +784,18 @@
 
 ---
 
+## [2026-05-14 ~04:10 TST] — Lokman Tsui: replace Presentations for Civil Society content with 25 detailed entries
+
+**Prompt summary:**
+> 「刪除 Presentations for Civil Society, Government and Others 所有內文，並新增：[25 items]」
+
+**Actions taken:**
+- Replaced all 25 existing items with 25 new detailed entries including full titles and event information.
+
+**Files modified:** `data/faculty/lokman-tsui.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
