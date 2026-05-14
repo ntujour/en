@@ -670,6 +670,18 @@
 
 ---
 
+## [2026-05-14 ~02:40 TST] — Lih-Yun Lin: add 2 conference papers after 2010 IAMCR entry
+
+**Prompt summary:**
+> 「Conference Presentations and Papers 新增在 2010 IAMCR Braga 下方：2 筆 2008 年論文」
+
+**Actions taken:**
+- Added 2 items after the 2010 IAMCR Braga entry: Lin, L. (2008, January 9) and Lin, L. (2008, May 24–25).
+
+**Files modified:** `data/faculty/lih-yun-lin.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
