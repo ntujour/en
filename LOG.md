@@ -719,6 +719,19 @@
 
 ---
 
+## [2026-05-14 ~03:20 TST] — Update Hui-Ju Tsai profile: phone and experiences
+
+**Prompt summary:**
+> 「1. 電話改成 +886-2-3366-3121 2. Experiences Associate Professor 日期改為 2024.8–present，下方新增 Assistant Professor NTU (2022.8–2024.7)」
+
+**Actions taken:**
+- contacts[0].value: `(02) 3366-3121` → `+886-2-3366-3121`
+- Experiences: updated Associate Professor date to `2024.8–present`; inserted new item "Assistant Professor, Graduate Institute of Journalism, National Taiwan University (2022.8–2024.7)" below it.
+
+**Files modified:** `data/faculty/hui-ju-tsai.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title

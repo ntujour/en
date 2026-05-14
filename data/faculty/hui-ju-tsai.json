@@ -6,7 +6,7 @@
   "photo": "../image/Hui-Ju%20Tsai.jpg",
   "placeholder": "蔡",
   "contacts": [
-    { "type": "phone", "value": "(02) 3366-3121" },
+    { "type": "phone", "value": "+886-2-3366-3121" },
     { "type": "email", "value": "tsaihuiju@ntu.edu.tw" },
     { "type": "web", "text": "tintincai.wixsite.com/hjtsai", "url": "https://tintincai.wixsite.com/hjtsai" }
   ],
@@ -23,7 +23,8 @@
       "heading": "Experiences",
       "type": "list",
       "items": [
-        "Associate Professor, Graduate Institute of Journalism, National Taiwan University (2021.8–present)",
+        "Associate Professor, Graduate Institute of Journalism, National Taiwan University (2024.8–present)",
+        "Assistant Professor, Graduate Institute of Journalism, National Taiwan University (2022.8–2024.7)",
         "Project-Appointed Assistant Professor, Department of Adult and Continuing Education, National Taiwan Normal University (2021.8–2022.7)",
         "Assistant Professor, Department of Mass Communication, Tamkang University (2018.8–2021.7)"
       ]
