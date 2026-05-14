@@ -559,6 +559,18 @@
 
 ---
 
+## [2026-05-14 ~01:10 TST] — Reduce ftag font-size to 9.5px
+
+**Prompt summary:**
+> 「> 600px 時，請幫我改成 9.5px」
+
+**Actions taken:**
+- Changed `.ftag { font-size }` from `10.5px` to `9.5px` in `css/style.css`.
+
+**Files modified:** `css/style.css`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title

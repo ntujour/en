@@ -704,7 +704,7 @@ a.faculty-card:hover .faculty-name { text-decoration: underline; }
 
 .ftag {
   font-family: -apple-system, sans-serif;
-  font-size: 10.5px;
+  font-size: 9.5px;
   padding: 0.18rem 0.5rem;
   border-radius: 3px;
   background: var(--bg-alt);
