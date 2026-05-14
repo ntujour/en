@@ -656,6 +656,20 @@
 
 ---
 
+## [2026-05-14 ~02:30 TST] — Lih-Yun Lin: add commissioned project, reverse awards, add 8 conference papers
+
+**Prompt summary:**
+> 「1. Other Commissioned Research Projects 新增 Weng S.C. (2000) Formosa Incident 項目 2. Honors and Awards 順序顛倒 3. Conference Presentations and Papers 四處新增共 8 筆條目」
+
+**Actions taken:**
+- Other Commissioned Research Projects: added 1 new item after "Retrospect and prospect..." entry.
+- Honors and Awards: reversed order of all 11 items (most recent first).
+- Conference Presentations and Papers: added 3 items after 2017 TAIS; added 2 items after 2015 July Montreal post-authoritarian; added 3 items after 2013 June NATSC; added 2 items after 2012 July IAMCR Durban.
+
+**Files modified:** `data/faculty/lih-yun-lin.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
