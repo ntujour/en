@@ -760,6 +760,18 @@
 
 ---
 
+## [2026-05-14 ~03:50 TST] — Lokman Tsui: append 17 older publications to Journal Articles section
+
+**Prompt summary:**
+> 「在 Journal Articles and Other Publications 內文新增：[17 items from 2002–2018]」
+
+**Actions taken:**
+- Appended 17 items after the existing 10 entries, covering 2002–2018 publications.
+
+**Files modified:** `data/faculty/lokman-tsui.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
