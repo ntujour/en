@@ -547,6 +547,18 @@
 
 ---
 
+## [2026-05-14 ~01:00 TST] — Add "5 Elective Courses" to intro-stats
+
+**Prompt summary:**
+> 「intro-stats 新增一個：5 elective courses」
+
+**Actions taken:**
+- Added a new `.stat` block (stat-num: 5, stat-label: Elective Courses) to `.intro-stats` in `index.html`.
+
+**Files modified:** `index.html`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
