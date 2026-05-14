@@ -521,6 +521,32 @@
 
 ---
 
+## [2026-05-14 ~00:45 TST] — Update Introduction body text and pillar labels
+
+**Prompt summary:**
+> 「請幫我針對 index.html 的 introduction 作出修改：1. 內文改為 6 段新文字，第二段 'learning by doing' 加粗體 2. 四個標籤改為：Journalism Skill, Independent Thinking & Multicultural Awareness, Global Outlook, Academic Expertise，各附新說明文字」
+
+**Actions taken:**
+- Replaced 3 intro-text paragraphs with 6 new paragraphs.
+- Added `<strong>'learning by doing'</strong>` in second paragraph.
+- Updated all 4 pillar-tag labels and pillar-body descriptions.
+
+**Files modified:** `index.html`
+
+---
+
+## [2026-05-14 ~00:50 TST] — Rename pillar tag to #Critical Thinking
+
+**Prompt summary:**
+> 「#Independent Thinking & Multicultural Awareness 幫我改成 #Critical Thinking」
+
+**Actions taken:**
+- Changed pillar-btn label from `#Independent Thinking & Multicultural Awareness` to `#Critical Thinking` in `index.html`.
+
+**Files modified:** `index.html`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
