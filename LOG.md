@@ -808,6 +808,18 @@
 
 ---
 
+## [2026-05-14 ~04:30 TST] — Lokman Tsui: replace Service (Selected) with 7 detailed entries
+
+**Prompt summary:**
+> 「刪除 Service (Selected) 所有內文，並新增：[7 items with full descriptions]」
+
+**Actions taken:**
+- Replaced 6 existing items with 7 new detailed entries; journal names in `<em>`.
+
+**Files modified:** `data/faculty/lokman-tsui.json`
+
+---
+
 <!-- Template for future entries:
 
 ## [YYYY-MM-DD HH:MM TST] — Short title
